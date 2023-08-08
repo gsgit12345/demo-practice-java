@@ -1,4 +1,0 @@
-Suppose I got the requirement that we need to save the invoice in the DB.
-So we have add a function in the InvoiceDao like public void saveToFile() which is incorrect.
-because InvoiceDao is tested and running in live environment.we can not modify and if we modify it will produce the bug.
-

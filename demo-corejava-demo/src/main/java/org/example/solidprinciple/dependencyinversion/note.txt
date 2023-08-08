@@ -1,0 +1,2 @@
+
+classes should depends on interfaces rather than on concrete classes.
