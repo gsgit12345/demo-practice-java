@@ -1,0 +1,15 @@
+
+Advantage and use cases
+1-it controls the concurrent access  to the resource.
+2-it ensures that there is only one object available across the application in a controlled state.
+3-it is used in logging ,driver object ,caching and thread pool.
+4-it is also used in other design pattern like abstract factory,builder,prototype,facad etc.
+
+Implementation
+
+1-Private constructor so that we can not instantiate from other classes.
+2-private static variable of the same classes that is the only instance of the class.
+3-public static method that returns the instance of the class.this is the global access point for the outer world to get the instance of the singleton class
+
+Disadvantage of the EagerSingleton:-The disadvantage of EagerSingleton is object is created at the time of class loading.while client is not using the object.
+Disadvantage of the LazySingleton:-The disadvantage of the LazySingleton is that it is not safe in multithreaded environment.

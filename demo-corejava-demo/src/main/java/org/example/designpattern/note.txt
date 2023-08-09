@@ -1,0 +1,13 @@
+Design pattern are the well proved solution of commonly occuring problems in software design.
+design pattern is an idea and it is language neutral.it is a reusable solution
+
+1-creational design pattern  :-related to object creation
+2-structural design pattern
+3-Behavioral design pattern:-this type deals with communication between classes and object.
+
+
+1-Singleton Design patter:-it ensures that only one object of its kind exists and provide a single point of access to it for any other code.
+as for example Desktop class,Runtime and System class
+
+
+https://www.vojtechruzicka.com/singleton-pattern-pitfalls/
