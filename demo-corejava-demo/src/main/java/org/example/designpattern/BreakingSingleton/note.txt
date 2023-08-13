@@ -1,0 +1,11 @@
+We can break three ways singleton
+
+1-Reflection:-To overcome the breaking singleton  using reflection,we can use enum.java gurantee itself
+that enum value is instantitate only once.Singleton using Enums are only drawback is it does not allow lazy initialization.you can not invoke enum constructor.
+java invoke the enum constructor.
+2-serialization:-To overcome this issue, we have to implement the method readResolve() method.
+3-Cloning
+
+Overcome Cloning issue: To overcome this issue, override clone() method and throw an exception from clone method that is CloneNotSupportedException.
+ Now, whenever user will try to create clone of singleton object, it will throw an exception and hence our class remains singleton.
+

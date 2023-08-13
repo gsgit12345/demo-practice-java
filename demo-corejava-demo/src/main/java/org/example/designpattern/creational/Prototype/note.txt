@@ -1,0 +1,9 @@
+It is used when we have to make copy/clone from the existing object.It is copy the existing object rather than create new object.
+the existing object acts as prototype and contains the state of the object.using two mechanism ,you can create the clone of the object.
+interface -> The cloning techniques are declared in the interface. It’s usually only a single clone method.
+Concrete Class -> The cloning method is implemented by the Concrete Prototype class.
+Client Class -> The client class will use the Interface to create/get the copy of Concrete class.
+1-Deep copy:-in deep copy , original and cloned object would be different.if we changed any property of the cloned object.it would not be visible in the original object.
+2-Shallow copy:-in shallow copy if class has any reference object and if you change any property of cloned ,it would be visible in the original object.
+
+Use case:-suppose we are loading data from the database and try to manipulate with data and saving again data in database.In this case we will

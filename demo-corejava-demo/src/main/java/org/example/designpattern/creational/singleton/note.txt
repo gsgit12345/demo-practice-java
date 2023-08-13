@@ -1,0 +1,31 @@
+
+Advantage and use cases
+1-it controls the concurrent access  to the resource.
+2-it ensures that there is only one object available across the application in a controlled state.
+3-it is used in logging ,driver object ,caching and thread pool.
+4-it is also used in other design pattern like abstract factory,builder,prototype,facad etc.
+
+Implementation
+
+1-Private constructor so that we can not instantiate from other classes.
+2-private static variable of the same classes that is the only instance of the class.
+3-public static method that returns the instance of the class.this is the global access point for the outer world to get the instance of the singleton class
+
+Disadvantage of the EagerSingleton:-The disadvantage of EagerSingleton is object is created at the time of class loading.while client is not using the object.
+Disadvantage of the LazySingleton:-The disadvantage of the LazySingleton is that it is not safe in multithreaded environment.
+Singleton using synchronized keyword:-we can see that there's a clear performance drawback: each time we want to get the instance of our singleton,
+we need to acquire a potentially unnecessary lock
+
+DoubleCheckLockingSingleton:-It solves the problem of the using synchronised keyword.but it has subtle bug due to java memory model.due to java memory model,partial
+initialized object can be returned.It requires the Volatile keyword to work properly.Volatile keyword guaranteed the happen before concept.but it is not compatible
+with java version 1.4 and below version.
+
+
+ThreadSafeSingletonUsingStaticInnerClass:-It works because it uses the class loader to do all the synchronization for you for free:
+The class ThreadSafeSingletonUsingStaticInnerClass.SingletonLoader is first accessed inside the getInstance() method,
+so the Loader class loads when getInstance() is called for the first time.
+ Further, the class loader guarantees that all static initialization is complete before you get access to the class - that's what gives you thread-safety.
+
+ ThreadSafeSingletonUsingStaticInitialization block:-in this case also java classloader give the gurantee of the thread safety.
+
+
