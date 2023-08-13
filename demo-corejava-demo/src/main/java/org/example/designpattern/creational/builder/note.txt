@@ -1,0 +1,2 @@
+
+Note:-User object does not have any setter method.so its state can not be changed after object creation.so it provides us immutability.
