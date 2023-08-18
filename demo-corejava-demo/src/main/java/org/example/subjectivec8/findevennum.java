@@ -46,6 +46,23 @@ public class findevennum {
 
 
     }
+    public static void totalNumberInList()
+    {
+        List<Integer> integerList= Arrays.asList(10,15,11,1,8,8,1,49,25,98,32);
+     long count=   integerList.stream().count();
+     System.out.println(count);
+      //  5. Given a list of integers, find the total number of elements present in the list using Stream functions?
+    }
+    public static void getMaxValueInList()
+    {
+        List<Integer> integerList= Arrays.asList(10,15,11,1,8,8,1,49,25,98,32);
+        integerList.stream().max(Integer::max).get();
+    //    6. Given a list of integers, find the maximum value element present in it using Stream functions?
+    }
+    public static void getFirstNonRepeatedCharacter()
+    {
+
+    }
 
 
 }
