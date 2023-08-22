@@ -2,4 +2,4 @@ Given a list of integers, find out all the even numbers that exist in the list u
 2. Given a list of integers, find out all the numbers starting with 1 using Stream functions?
 3. How to find duplicate elements in a given integers list in java using Stream functions?
 
-
+https://www.youtube.com/watch?v=QyfG6meLJBQ&list=PL-Jc9J83PIiFj7YSPl2ulcpwy-mwj1SSk&index=156    ==java datastructure tutorial

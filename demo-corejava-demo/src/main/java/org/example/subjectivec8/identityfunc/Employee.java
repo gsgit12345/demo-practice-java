@@ -1,49 +1,62 @@
 package org.example.subjectivec8.identityfunc;
 
 public class Employee {
-    public int id;
+    public int employeeId;
 
     @Override
     public String toString() {
         return "Employee{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", age=" + age +
+                "employeeId=" + employeeId +
+                ", employeeName='" + employeeName + '\'' +
+                ", deptName=" + deptName +
+                ", salary=" + salary +
                 '}';
     }
 
-    public String name;
-    public int age;
+    public String employeeName;
 
-    public int getId() {
-        return id;
+    public String deptName;
+    public int salary;
+
+    public int getEmployeeId() {
+        return employeeId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setEmployeeId(int employeeId) {
+        this.employeeId = employeeId;
     }
 
-    public String getName() {
-        return name;
+    public String getEmployeeName() {
+        return employeeName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setEmployeeName(String employeeName) {
+        this.employeeName = employeeName;
     }
 
-    public int getAge() {
-        return age;
+    public String getDeptName() {
+        return deptName;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setDeptName(String deptName) {
+        this.deptName = deptName;
     }
 
-    public Employee(int id, String name, int age) {
-        this.id = id;
-        this.name = name;
-        this.age = age;
+    public int getSalary() {
+        return salary;
     }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    public Employee(int employeeId, String employeeName, String deptName, int salary) {
+        this.employeeId = employeeId;
+        this.employeeName = employeeName;
+        this.deptName = deptName;
+        this.salary = salary;
+    }
+
 
 
 }

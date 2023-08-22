@@ -5,6 +5,7 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class findevennum {
     public static void main(String str[]) {
@@ -14,7 +15,11 @@ public class findevennum {
         // findFirstElementInIntegers();
         // getFirstNonRepeatedCharacter();
         //getFirstRepeated();
-        sortingTheList();
+        //sortingTheList();
+        //returnTrueFalseIfListContainsDuplicate();
+       // concateTwoStream();
+       // cubeAndFilter();
+        sortAndConvertIntoStream();
     }
 
     public static void printEven() {
@@ -95,6 +100,58 @@ public class findevennum {
 
 
     }
+    public static void returnTrueFalseIfListContainsDuplicate()
+    {
+      //  11. Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+
+        int[] arrint=new int[]{2,4,12,56,34,34};
+boolean isSimiliar=false;
+        List<Integer> list = Arrays.stream(arrint)
+                .boxed()
+                .collect(Collectors.toList());
+        Set<Integer> set = new HashSet<>(list);
+        if(set.size() == list.size()) {
+             isSimiliar=false;
+        }else
+         isSimiliar=true;
+
+        System.out.println("issimiliar true::::"+isSimiliar);
+    }
+public static void concateTwoStream()
+{
+    List<String> list1 = Arrays.asList("Java", "8");
+    List<String> list2 = Arrays.asList("explained", "through", "programs");
+
+   List<String> combineStream= Stream.concat(list1.stream(),list2.stream()).collect(Collectors.toList());
+
+   System.out.println(combineStream.toString());
+
+}
+public static  void cubeAndFilter()
+{
+   // 14. Java 8 program to perform cube on list elements and filter numbers greater than 50.
+    List<Integer> integerList=Arrays.asList(4,5,6,7,1,2,3);
+  List<Integer> list =  integerList.stream().map(i->i*i*i).filter(i->i>50).collect(Collectors.toList());
+  System.out.println(list.toString());
+}
+public static void sortAndConvertIntoStream()
+{
+   // 15. Write a Java 8 program to sort an array and then convert the sorted array into Stream?
+  //  List<Integer> integerList=Arrays.asList(4,5,6,7,1,2,3);
+
+    int arr[] = { 99, 55, 203, 99, 4, 91 };
+    Arrays.sort(arr);
+    Arrays.stream(arr).forEach(System.out::println);
+//convert String into uppercase
+    List<String> arraysList=Arrays.asList("hello","how","are","you");
+
+  List<String> upperList=  arraysList.stream().map(String::toUpperCase).collect(Collectors.toList());
+
+  System.out.println(upperList.toString());
 
 
 }
+    }
+
+
+
