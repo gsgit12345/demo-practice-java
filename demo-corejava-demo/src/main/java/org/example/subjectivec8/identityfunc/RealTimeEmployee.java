@@ -4,7 +4,7 @@ public class RealTimeEmployee {
     int id;
     String name;
     int age;
-    String gender;
+   public  String gender;
     String department;
     int yearOfJoining;
     double salary;
