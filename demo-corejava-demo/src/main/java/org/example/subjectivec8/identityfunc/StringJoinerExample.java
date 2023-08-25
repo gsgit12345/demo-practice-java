@@ -12,7 +12,8 @@ public class StringJoinerExample {
         //joinStringWithPrifixAndPostFixSymbol();
        // joinUsingStringFunction();
        // convertingArrayIntoString();
-        convertingArrayIntoString();
+       // convertingArrayIntoString();
+        joinObjectPropertyWithExtraString();
     }
     public static void joinStringWithBarSymbol()
     {
@@ -61,6 +62,13 @@ public class StringJoinerExample {
         String joinedString2 = listOfStrings.stream().collect(Collectors.joining(" | "));
 
         System.out.println(joinedString2);
+
+    }
+    public static void joinObjectPropertyWithExtraString()
+    {
+        List<RealTimeEmployee> employeeList=   RealTimeEmployeeQuestion.loadEmployee();
+    String joine=    employeeList.stream().filter(p->p.getSalary()>34000).map(p->p.getName()).collect(Collectors.joining("are getting salary"));
+    System.out.println("joine:::"+joine);
 
     }
 
