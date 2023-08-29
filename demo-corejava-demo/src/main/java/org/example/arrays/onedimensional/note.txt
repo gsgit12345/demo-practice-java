@@ -1,0 +1,7 @@
+The recommended solution to target this problem is using the priority queue. The idea is to keep track of the top k largest elements using a
+min-heap of size k. The advantage of using the min-heap is that the k'th largest element is always present at the root and can be retrieved in constant time.
+The idea is to compare each incoming element n in the stream with the root element of min-heap r. If n is more than r, replace r with n and call
+the Heapify procedure on the modified heap’s root. If n is less than r, ignore it.
+The time complexity of processing a new element in the stream using this approach is O(log(k)), while the time taken for finding the k'th largest
+element improves to O(1). The additional space used by the program is O(k).
+
