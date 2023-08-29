@@ -1,8 +1,6 @@
 package org.example.arrays.onedimensional;
 
-import org.apache.logging.log4j.util.PropertySource;
 
-import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
@@ -11,13 +9,13 @@ public class KthLargestAndSmallest {
         int array[] = {4, 5, 2, 6, 7};
         String[] strr = new String[]{"Yuri", "Interview", "Nordstrom", "Cat", "Dog", "Telephone", "AVeryLongString", "This code puzzle is easy"};
 
-        int kthlargest = 0;
+        int kthlargest = 4;
         int ktsmall = 0;
-        int largest = kthLargest(array, kthlargest);
-        System.out.println("kth largest::" + largest);
-        int small = kthSmallest(array, ktsmall);
-        System.out.println("kth small::" + small);
-        usingArrayKthSmallestAndLargest(array, kthlargest);
+        //int largest = kthLargest(array, kthlargest);
+       // System.out.println("kth largest::" + largest);
+        //int small = kthSmallest(array, ktsmall);
+        //System.out.println("kth small::" + small);
+        //usingArrayKthSmallestAndLargest(array, kthlargest);
         String longeststr=kthLongestString(strr,kthlargest);
         System.out.println("longest string::"+longeststr);
     }
@@ -41,17 +39,16 @@ public class KthLargestAndSmallest {
         PriorityQueue<String> queue = new PriorityQueue<>((a, b)->b.length()-a.length());//here if you are doing ,you will find ktlangeststring
        // PriorityQueue<String> smallest = new PriorityQueue<>((a, b)->a.length()-b.length());//here if you are doing ,you will find ktsmalleststring
 
-
         for(String strr:array)
         {
             queue.add(strr);
         }
-        if(kthlarge>0)
+        while(kthlarge>0)
         {
             queue.poll();
             kthlarge--;
         }
-       return  queue.peek();
+       return  queue.poll();
     }
 
     public static int kthSmallest(int array[], int ktsmall) {
