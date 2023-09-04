@@ -26,6 +26,8 @@ public class FindFrequencyInArray {
         String word[] = {"hello", "hello", "hi", "how", "how", "hi","hi", "going", "going"};
         //   findFRequencyInWordArray(word);
         findFRequencyInWordArrayInNaiveWay(word);
+        String strch="hello ho are you";
+        findFrquencyInCharArray(strch);
 
     }
 
@@ -83,7 +85,7 @@ public class FindFrequencyInArray {
         for (int i = 0; i < array.length; i++) {
             int count = 1;
             for (int j = i + 1; j < array.length; j++) {
-                if (array[i].equalsIgnoreCase(array[j])) {
+                if (array[i]==array[j]) {
                     count++;
                     frequency[j] = fre;
                 }
@@ -93,11 +95,43 @@ public class FindFrequencyInArray {
             }
         }
         for (int i = 0; i < frequency.length; i++) {
-            System.out.print(array[i] + "::" + frequency[i]);
+            if(frequency[i]!=fre) {
+                System.out.print(array[i] + "::" + frequency[i]);
+            }
         }
 
     }
 
+    public static void findFrquencyInCharArray(String strch)
+    {
+        char array[]=strch.toCharArray();
+        int freq=-1;
+        int frquency[]=new int[array.length];
+        for(int i=0;i<array.length;i++)
+        {
+            int count=1;
+            for(int j =i+1;j<array.length;j++)
+            {
+                if(array[i]==array[j])
+                {
+                    count++;
+                    frquency[j]=freq;
+
+                }
+            }
+            if(frquency[i]!=freq)
+            {
+                frquency[i]=count;
+            }
+        }
+        for(int i=0;i<frquency.length;i++)
+        {
+            if(frquency[i]!=freq) {
+                System.out.print(array[i] + ":|:" + frquency[i]);
+            }
+        }
+
+    }
     public static void modifiedCollection(ArrayList array) {
         array.add(90);
     }
