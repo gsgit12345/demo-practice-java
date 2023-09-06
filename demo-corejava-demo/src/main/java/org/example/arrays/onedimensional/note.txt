@@ -16,3 +16,6 @@ same colours are adjacent with the order of the balls, with the order of the col
  then the white coloured balls and then the blue coloured balls).
 solution
 //DutchNationalFlagProbandThreewayPartion.java
+
+
+https://www.w3resource.com/java-exercises/array/index.php  java subjective excersize
