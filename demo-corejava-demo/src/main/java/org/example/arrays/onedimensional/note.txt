@@ -19,3 +19,8 @@ solution
 
 
 https://www.w3resource.com/java-exercises/array/index.php  java subjective excersize
+
+   1-     //Find first non-repeating element in a given Array of integers
+       // https://www.geeksforgeeks.org/non-repeating-element/
+
+   2-
