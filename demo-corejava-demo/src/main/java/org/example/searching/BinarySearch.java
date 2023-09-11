@@ -11,20 +11,22 @@ public class BinarySearch {
 
         int index = binarySearchUsingRecursion(low, high, searchKey, arr);
         System.out.println("index is::" + index + ":and value is::" + arr[index]);
+        int key = 8;
+        binarySearch(arr,key);
     }
 
-    public static void binarySearch(int[] array) {
+    public static void binarySearch(int[] array,int searchKey) {
         int low = 0;
         int high = array.length - 1;
         int mid = (low + high) / 2;
         System.out.println(mid);
-        int key = 8;
+
 
         while (low <= high) {
-            if (array[mid] == key) {
+            if (array[mid] == searchKey) {
                 System.out.println("element is found at index:" + mid + ":and element:" + array[mid]);
                 break;
-            } else if (array[mid] < key) {
+            } else if (array[mid] < searchKey) {
                 low = mid + 1;
             } else {
                 high = mid - 1;
