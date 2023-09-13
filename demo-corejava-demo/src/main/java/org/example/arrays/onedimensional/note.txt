@@ -26,3 +26,5 @@ https://www.w3resource.com/java-exercises/array/index.php  java subjective excer
    2-
 
    //https://practice.geeksforgeeks.org/explore?page=9&sortBy=submissions  --problem on merge sort
+
+   https://www.youtube.com/watch?v=e-sbCk5FOF8&list=PLLT4EuYB4kIb0G4k2LxdIs2dCaj9vebqC   --problem solving
