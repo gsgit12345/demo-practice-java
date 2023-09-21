@@ -1,6 +1,6 @@
-package practice;
+package org.example.arrays.onedimensional;
 
-public class Test111 {
+public class SortByLengthArrayOfString {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

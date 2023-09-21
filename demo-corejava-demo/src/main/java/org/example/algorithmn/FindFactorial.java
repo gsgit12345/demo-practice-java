@@ -1,4 +1,4 @@
-package algirithm;
+package org.example.algorithmn;
 
 public class FindFactorial {
 public static void main(String str[])

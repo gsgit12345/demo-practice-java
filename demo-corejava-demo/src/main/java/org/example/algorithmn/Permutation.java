@@ -1,4 +1,4 @@
-package algirithm;
+package org.example.algorithmn;
 
 //Java program to print all permutations of a 
 //given string. 

@@ -1,4 +1,4 @@
-package java8miscs;
+package org.example.defaultmethod;
 
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;

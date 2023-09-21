@@ -1,4 +1,4 @@
-package ArrayQuestion;
+package org.example.arrays.onedimensional;
 
 public class SortAnArray {
 

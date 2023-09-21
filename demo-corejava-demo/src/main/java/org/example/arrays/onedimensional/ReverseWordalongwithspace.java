@@ -1,4 +1,4 @@
-package practice;
+package org.example.arrays.onedimensional;
 
 import java.util.Stack;
 

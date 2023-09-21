@@ -1,4 +1,4 @@
-package ArrayQuestion;
+package org.example.arrays.onedimensional;
 
 import java.util.Arrays;
 //Java program to test whether an array

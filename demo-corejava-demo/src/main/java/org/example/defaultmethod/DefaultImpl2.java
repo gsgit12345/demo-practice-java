@@ -1,4 +1,4 @@
-package defaultmethod;
+package org.example.defaultmethod;
 
 public class DefaultImpl2  implements interface1,interface2 {
 

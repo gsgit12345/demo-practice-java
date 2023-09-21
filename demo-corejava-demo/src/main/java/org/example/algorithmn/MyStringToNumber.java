@@ -1,4 +1,4 @@
-package algirithm;
+package org.example.algorithmn;
 
 public class MyStringToNumber {
 	public static int convert_String_To_Number(String numStr) {

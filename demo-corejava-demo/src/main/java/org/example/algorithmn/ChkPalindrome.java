@@ -1,11 +1,10 @@
-package algirithm;
+package org.example.algorithmn;
 
 class ChkPalindrome
 {
    public static void main(String args[])
    {
       String str, rev = "";
-      
       str="ntpc";
       int length = str.length();
  
@@ -17,5 +16,16 @@ class ChkPalindrome
       else
          System.out.println(str+" is not a palindrome");
  
+   }
+   public static  boolean isPalindrome(String str)
+   {
+      int length=str.length();
+      if(length==0)
+         return true;
+      return false;
+   }
+   public static boolean palindromUsingRecursion(String str,int start,int end)
+   {
+      return false;
    }
 }

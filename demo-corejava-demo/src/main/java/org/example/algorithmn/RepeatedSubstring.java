@@ -1,4 +1,4 @@
-package algirithm;
+package org.example.algorithmn;
 
 import java.util.ArrayList;
 import java.util.HashMap;

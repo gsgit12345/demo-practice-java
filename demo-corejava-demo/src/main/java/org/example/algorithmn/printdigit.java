@@ -1,4 +1,4 @@
-package algirithm;
+package org.example.algorithmn;
 
 import com.sun.org.apache.xerces.internal.util.SynchronizedSymbolTable;
 

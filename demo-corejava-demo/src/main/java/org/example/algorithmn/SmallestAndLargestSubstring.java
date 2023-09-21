@@ -1,4 +1,4 @@
-package algirithm;
+package org.example.algorithmn;
 
 public class SmallestAndLargestSubstring {
 	public static String getSmallestAndLargest(String s, int k) {

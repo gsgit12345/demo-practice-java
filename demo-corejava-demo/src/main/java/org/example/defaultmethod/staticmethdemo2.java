@@ -1,4 +1,4 @@
-package defaultmethod;
+package org.example.defaultmethod;
 
 interface printdemo
 {

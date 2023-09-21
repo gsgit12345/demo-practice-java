@@ -1,4 +1,4 @@
-package practice.arrayques;
+package org.example.arrays.onedimensional;
 
 import java.util.Arrays;
 

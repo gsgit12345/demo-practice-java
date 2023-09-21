@@ -1,4 +1,4 @@
-package algirithm;
+package org.example.algorithmn;
 
 import java.util.HashMap;
 
@@ -12,7 +12,7 @@ public class Anagramofstring {
 		
 		String st2="tensli";
 		
-		System.out.println("string is anagram:=="+findanagram(st,st2));
+		//System.out.println("string is anagram:=="+findanagram(st,st2));
 				
 
 	}

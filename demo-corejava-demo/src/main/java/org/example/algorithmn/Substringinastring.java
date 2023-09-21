@@ -1,4 +1,4 @@
-package algirithm;
+package org.example.algorithmn;
 
 import java.util.ArrayList;
 
@@ -12,7 +12,7 @@ public String repeatingSubstring(String as)
 	ArrayList<String> aL=new ArrayList<String>();
 	String repeated = "";
 	int count=0;
-	for (String string : ) {
+	for (String string : aL) {
 		if(string.equals(repeated)){
 			count++;
 		}else if(count==0){
@@ -23,5 +23,6 @@ public String repeatingSubstring(String as)
 		}
 	}
 	System.out.println(repeated);
+	return repeated;
 }
 }

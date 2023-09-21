@@ -1,4 +1,4 @@
-package algirithm;
+package org.example.algorithmn;
 
 import java.util.ArrayList;
 
@@ -53,19 +53,23 @@ static String reverseVowels2(String s) {
     int i = 0;
     int j = s.length() - 1;
     while (i < j) {
-        while (i < j && !isVowel(s[i])) {
+        while (i < j && !isVowel(s.charAt(i))) {
             i ++;
         }
-        while (i < j && !isVowel(s[j])) {
+        while (i < j && !isVowel(s.charAt(i))) {
             j --;
         }
-        swap(s[i++], s[j--]);
+        swap(s.charAt(i++), s.charAt(j--));
     }
     return s;
 }
 
-public  boolean  isVowel(char c) {
+public static boolean  isVowel(char c) {
     return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||
            c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U';
+}
+public static void swap(char i,char j)
+{
+
 }
 }

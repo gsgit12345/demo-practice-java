@@ -1,4 +1,4 @@
-package java8miscs;
+package org.example.defaultmethod;
 //Outer Class
 public class Shadowing {
 

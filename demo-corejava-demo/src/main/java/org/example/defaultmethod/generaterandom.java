@@ -1,4 +1,4 @@
-package java8miscs;
+package org.example.defaultmethod;
 
 import java.util.Random;
 

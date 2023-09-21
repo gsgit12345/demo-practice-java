@@ -1,4 +1,4 @@
-package algirithm;
+package org.example.algorithmn;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;

@@ -1,4 +1,4 @@
-package practice.arrayques;
+package org.example.arrays.onedimensional;
 class Original {
 	 
     // This function takes first element as pivot, and

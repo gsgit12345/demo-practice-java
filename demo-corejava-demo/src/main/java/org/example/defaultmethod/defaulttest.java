@@ -1,7 +1,7 @@
-package java8miscs;
+package org.example.defaultmethod;
 
 
- interface hello
+ interface hello2
 {
 	default String nonReq()
 	{
@@ -10,7 +10,7 @@ package java8miscs;
 }
 
  
-  static class hhh implements hello
+  static class hhh implements hello2
  {
 	 
  }

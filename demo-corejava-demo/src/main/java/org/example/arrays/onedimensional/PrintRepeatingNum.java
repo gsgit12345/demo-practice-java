@@ -1,4 +1,4 @@
-package practice.arrayques;
+package org.example.arrays.onedimensional;
 //big(n) time
 public class PrintRepeatingNum {
 

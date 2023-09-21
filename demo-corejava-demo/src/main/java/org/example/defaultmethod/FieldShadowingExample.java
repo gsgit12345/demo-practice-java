@@ -1,4 +1,4 @@
-package java8miscs;
+package org.example.defaultmethod;
 public class FieldShadowingExample{
 	   String name = "Krishna";
 	   int age = 25;

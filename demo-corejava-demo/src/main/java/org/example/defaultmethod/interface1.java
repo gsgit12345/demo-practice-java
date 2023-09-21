@@ -1,4 +1,4 @@
-package defaultmethod;
+package org.example.defaultmethod;
 
 public interface interface1 {
 	

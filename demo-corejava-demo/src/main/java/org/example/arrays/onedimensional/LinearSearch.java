@@ -1,4 +1,4 @@
-package practice;
+package org.example.arrays.onedimensional;
 
 import java.util.Arrays;
 import java.util.List;
@@ -43,9 +43,10 @@ public class LinearSearch {
 		
 	List<Integer> list=	Arrays.asList(arr);
 	
-	Optional<Integer> num=list.stream().filter(x->x==num).findAny();
+	Optional<Integer> num2=list.stream().filter(x->x==num).findAny();
 	
-		
+
+	return 0;
 	}
 
 }

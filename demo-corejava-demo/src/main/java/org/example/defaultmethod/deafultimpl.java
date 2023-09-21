@@ -1,4 +1,4 @@
-package defaultmethod;
+package org.example.defaultmethod;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package practice;
+package org.example.arrays.onedimensional;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

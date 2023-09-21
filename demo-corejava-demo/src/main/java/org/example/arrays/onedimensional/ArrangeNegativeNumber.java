@@ -1,4 +1,4 @@
-package executerdemo.practice;
+package org.example.arrays.onedimensional;
 
 public class ArrangeNegativeNumber {
 
