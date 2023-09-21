@@ -1,5 +1,5 @@
 package practice.overload;
-class OverloadedMethod{
+class OverloadedMethod4{
    public void test(int[] intArr) {
       System.out.println("int array");
    }
@@ -9,8 +9,8 @@ class OverloadedMethod{
    }
       
    public static void main(String[] args) {
-      OverloadedMethod obj = new OverloadedMethod();
-      obj.test(null);
+      OverloadedMethod4 obj = new OverloadedMethod4();
+   //   obj.test(null); //ambigous method call
    }
 }
 //ans ---compile time error

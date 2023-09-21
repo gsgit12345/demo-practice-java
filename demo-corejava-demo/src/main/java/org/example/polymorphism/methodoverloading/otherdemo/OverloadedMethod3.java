@@ -1,5 +1,5 @@
-package practice.overload;
-class OverloadedMethod{
+package org.example.polymorphism.methodoverloading.otherdemo;
+class OverloadedMethod3{
    public void test(String obj1, Object obj2) {
       System.out.println("B");
    }
@@ -9,7 +9,7 @@ class OverloadedMethod{
    }
       
    public static void main(String[] args) {
-      OverloadedMethod obj = new OverloadedMethod();
-      obj.test(null, null);
+      OverloadedMethod3 obj = new OverloadedMethod3();
+    //  obj.test(null, null);//ambigous method call
    }
 }

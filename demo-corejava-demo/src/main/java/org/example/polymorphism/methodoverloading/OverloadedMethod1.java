@@ -1,4 +1,4 @@
-package methodoveriding.methodoverloading;
+package org.example.polymorphism.methodoverloading;
 
 public class OverloadedMethod1 {
 	public void test(String test)
@@ -17,7 +17,7 @@ public class OverloadedMethod1 {
 		// TODO Auto-generated method stub 
 		
 		OverloadedMethod1 over1=new OverloadedMethod1();
-		over1.test(null); //ambiguous method error
+	//	over1.test(null); //ambiguous method error
 
 	}
 

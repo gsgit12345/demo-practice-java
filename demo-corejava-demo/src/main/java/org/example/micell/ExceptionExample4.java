@@ -1,4 +1,4 @@
-package misc;
+package org.example.micell;
 
 class ExceptionExample4 {
 	 public static void main(String[] args) {

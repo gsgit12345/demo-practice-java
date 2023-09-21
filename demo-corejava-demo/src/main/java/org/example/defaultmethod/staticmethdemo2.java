@@ -19,11 +19,12 @@ public class staticmethdemo2 implements printdemo {
 
 	
 	private final String helo;
-	private static final String b;
-	staticmethdemo2(String h)
+	//private static final String b;
+	//final variable  must be initialize in constructor.otherwise it will give compile time error
+	staticmethdemo2(String b)
 	{
-		this.helo=h;
-		this.b=h;
+		this.helo=b;
+		//this.b=b;
 	}
 	
 	public static void main(String[] args) {
@@ -31,10 +32,10 @@ public class staticmethdemo2 implements printdemo {
 		
 		printdemo.printdemo();
 		
-		staticmethdemo2 dd=new staticmethdemo2();
-		new staticmethdemo2().printdemo();
+		//staticmethdemo2 dd=new staticmethdemo2();
+	//	new staticmethdemo2().printdemo();
 		
-		dd.def();
+		//dd.def();
 		
 	}
 	static void printdemo()

@@ -4,6 +4,10 @@ public class Student {
 	
 	String name;
 	public Address  addr;
+	public Student(String s)
+	{
+		this.name=getName();
+	}
 	public Student(String name,Address addr)
 	{
 		this.name=name;

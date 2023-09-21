@@ -43,8 +43,8 @@ String target="xxy";
         //from method return the true.
         if(source.length()!=target.length())
             return false;
-        HashMap<Character,Character> storeIsomorpic=new HashMap<>();
-        HashMap<Character,Boolean> isalreadyUsed=new HashMap<>();
+        HashMap<Character,Character> storeIsomorpic=new HashMap<Character,Character>();
+        HashMap<Character,Boolean> isalreadyUsed=new HashMap<Character,Boolean>();
         for(int i=0;i<source.length();i++)
         {
             char firstChar=source.charAt(i);
@@ -69,7 +69,7 @@ String target="xxy";
     {
 
         HashMap<Character, Character> charCount
-                = new HashMap();
+                = new HashMap<Character,Character>();
         char c = 'a';
         for (int i = 0; i < str1.length(); i++) {
             if (charCount.containsKey(str1.charAt(i))) {

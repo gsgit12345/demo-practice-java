@@ -1,4 +1,4 @@
-package designepattern.AbstractFactory;
+package org.example.designpattern.AbstractFactory;
 
 public class OnlineCourse implements Course{
 

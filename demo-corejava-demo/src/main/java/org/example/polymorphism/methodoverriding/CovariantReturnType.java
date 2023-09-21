@@ -1,24 +1,24 @@
-package Stringquestion;
+package org.example.polymorphism.methodoverriding;
 
-class A {}
+class AA {}
 
-class B extends A {}
+class BB extends AA {}
 
-class Base
+class BaseE
 {
-    B fun()
+    BB fun()
     {
         System.out.println("Base fun()");
-        return new B();
+        return new BB();
     }
 }
 
-class Derived extends Base
+class DerivedD extends BaseE
 {
-    A fun()
+    ////AA fun()
     {
         System.out.println("Derived fun()");
-        return new A();
+        //return new AA();
     }
 }
 
@@ -26,10 +26,10 @@ public class CovariantReturnType {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		  Base base = new Base();
+		  BaseE base = new BaseE();
 	       base.fun();
 
-	       Derived derived = new Derived();
+	       DerivedD derived = new DerivedD();
 	       derived.fun();
 
 	}

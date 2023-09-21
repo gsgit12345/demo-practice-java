@@ -1,4 +1,4 @@
-package methodoveriding.methodoverloading;
+package org.example.polymorphism.methodoverloading;
 
 public class ArithmeticOperations{
 public void add(int num1,int num2){

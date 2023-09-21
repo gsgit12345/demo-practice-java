@@ -58,7 +58,7 @@ public class HashMapwithoutOverride  {
 		
 		Student ss=new Student("hello");
 		
-		System.out.println(ss.name2);
+		//System.out.println(ss.name2);
 		
 		System.out.println(ss.name);
 		

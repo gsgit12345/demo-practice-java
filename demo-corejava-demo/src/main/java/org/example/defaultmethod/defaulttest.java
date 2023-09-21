@@ -10,10 +10,10 @@ package org.example.defaultmethod;
 }
 
  
-  static class hhh implements hello2
- {
+ //// static class hhh implements hello2
+ //{
 	 
- }
+// }
 public class defaulttest {
 
 	public static void main(String[] args) {

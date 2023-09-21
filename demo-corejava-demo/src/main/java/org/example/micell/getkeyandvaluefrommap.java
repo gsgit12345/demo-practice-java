@@ -1,4 +1,4 @@
-package miscell;
+package org.example.micell;
 
 import java.util.HashMap;
 import java.util.Map;

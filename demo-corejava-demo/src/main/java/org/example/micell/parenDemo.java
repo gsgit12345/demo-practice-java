@@ -1,4 +1,4 @@
-package misc;
+package org.example.micell;
 class abcdf
 {
 	public void say(int i)

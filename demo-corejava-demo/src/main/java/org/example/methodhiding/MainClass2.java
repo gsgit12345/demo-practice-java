@@ -1,4 +1,4 @@
-package practice.methodhiding;
+package org.example.methodhiding;
 class Parent{ 
 public static void print(){ 
     System.out.println("I am Parent"); 

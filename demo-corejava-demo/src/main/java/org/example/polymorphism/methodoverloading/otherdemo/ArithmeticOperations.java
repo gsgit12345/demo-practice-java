@@ -1,4 +1,4 @@
-package practice.overload;
+package org.example.polymorphism.methodoverloading.otherdemo;
 
 class ArithmeticOperations{
 	public void add()

@@ -1,5 +1,5 @@
-package practice.overload;
-class OverloadedMethod{      
+package org.example.polymorphism.methodoverloading.otherdemo;
+class OverloadedMethod7{
      public void test(char obj) {
           System.out.println("Char");
      }
@@ -7,7 +7,7 @@ class OverloadedMethod{
           System.out.println("Int");
      } 
      public static void main(String[] args) {
-          OverloadedMethod obj = new OverloadedMethod();
+          OverloadedMethod7 obj = new OverloadedMethod7();
           obj.test('a');
      }
 }

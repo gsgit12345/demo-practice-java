@@ -1,4 +1,4 @@
-package executerdemo.typicalquest;
+package org.example.typicalquestion;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;

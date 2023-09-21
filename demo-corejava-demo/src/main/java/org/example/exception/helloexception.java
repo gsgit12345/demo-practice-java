@@ -13,10 +13,11 @@ public void hello()
 	try
 	{
 		
-	}catch(IOException ex)
-	{
-		
-	}catch(Exception ex)
+	}//catch(IOException ex)
+	//{
+		//ioexception is never thrown corresponding try block.it is checked exception
+	//}
+	catch(Exception ex)
 	{
 		
 	}

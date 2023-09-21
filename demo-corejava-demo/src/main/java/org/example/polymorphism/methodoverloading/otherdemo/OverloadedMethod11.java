@@ -7,8 +7,8 @@ public void test(Character i, Character j) {
       System.out.println("method 2");
 } 
 public static void main(String[] args) {
-      OverloadedMethod obj = new OverloadedMethod();
-      obj.test('a','a');
+      OverloadedMethod11 obj = new OverloadedMethod11();
+    //  obj.test('a','a');//both method can be called using boxing and unboxing rule
 }
 }
 /*

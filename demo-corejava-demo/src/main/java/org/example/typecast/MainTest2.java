@@ -1,4 +1,4 @@
-package practice.typecast;
+package org.example.typecast;
 class ClassA{}
 class ClassB{}
 
@@ -7,7 +7,7 @@ interface InterfaceI{}
 class MainTest11 {
 public static void main(String[] args) {
 InterfaceI i = (InterfaceI)(new ClassA());
-ClassA b = (ClassB)(new ClassA()); 
+//ClassA b = (ClassB)(new ClassA());
 }
 }
 /*

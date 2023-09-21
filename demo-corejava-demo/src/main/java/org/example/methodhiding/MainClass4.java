@@ -1,19 +1,20 @@
-package practice.methodhiding;
-class Parent{ 
+package org.example.methodhiding;
+class Parent3{
     public void print(){ 
    System.out.println("I am Parent"); 
     } 
 }
 
-class Child extends Parent{ 
-    public static void print(){ 
-   System.out.println("I am Child"); 
-    } 
+class Child3 extends Parent3{
+    //public static void print(){
+   //System.out.println("I am Child");
+  //  can not overridee static method .compile time error
+   // }
 }
     
 public class MainClass4 { 
     public static void main(String args[]) { 
-   Parent parent = new Child(); 
+   Parent3 parent = new Child3();
    parent.print(); 
     } 
 }

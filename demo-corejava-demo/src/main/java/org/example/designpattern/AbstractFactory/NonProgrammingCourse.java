@@ -1,4 +1,4 @@
-package designepattern.AbstractFactory;
+package org.example.designpattern.AbstractFactory;
 
 public class NonProgrammingCourse implements Course {
 

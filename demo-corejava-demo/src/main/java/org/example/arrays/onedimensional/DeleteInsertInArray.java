@@ -53,7 +53,7 @@ public class DeleteInsertInArray {
 
         //useing arraylist
 
-        ArrayList<Integer> arrayList = (ArrayList) Arrays.stream(array).boxed().collect(Collectors.toList());
+        ArrayList<Integer> arrayList = (ArrayList<Integer>) Arrays.stream(array).boxed().collect(Collectors.toList());
 
         arrayList.remove(index); //delete by index
         arrayList.remove(new Integer(index));//delete by value
@@ -81,7 +81,7 @@ public class DeleteInsertInArray {
 
         //second way
         Integer objectArray[] = {new Integer(2), new Integer(3), new Integer(4), new Integer(7), new Integer(9), new Integer(10)};
-        List<Integer> list = new ArrayList<>(
+        List<Integer> list = new ArrayList<Integer>(
                 Arrays.asList(objectArray));
         int position = 2;
         int element = 12;

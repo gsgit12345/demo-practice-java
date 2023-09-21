@@ -1,4 +1,4 @@
-package executerdemo.typicalquest;
+package org.example.typicalquestion;
 
 import java.util.stream.IntStream;
 
@@ -12,7 +12,7 @@ public class findPrimeNum {
 	
 	public static int findPrime(int num)
 	{
-	    return IntStream.rangeClosed(2, number/2).noneMatch(i -> number%i == 0);
-
+	 //   return IntStream.rangeClosed(2, num/2).noneMatch(i -> num%i == 0);
+return 0;
 	}
 }

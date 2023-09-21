@@ -1,4 +1,4 @@
-package output;
+package org.example.micell;
 
 class Test1 { 
     protected int x, y; 

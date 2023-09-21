@@ -1,4 +1,4 @@
-package practice.exception;
+package org.example.exception;
 
 class ExceptionExample4 {
 	public static void main(String str[])

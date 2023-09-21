@@ -1,5 +1,5 @@
-package practice.overload;
-class OverloadedMethod{
+package org.example.polymorphism.methodoverloading.otherdemo;
+class OverloadedMethod6{
      public void test(long lng) {
      System.out.println("Long");
      }
@@ -9,8 +9,8 @@ class OverloadedMethod{
      }
      
      public static void main(String[] args) {
-     OverloadedMethod obj = new OverloadedMethod();
-     obj.test(1);
+     OverloadedMethod6 obj = new OverloadedMethod6();
+     obj.test(1);//widening rule is applicable.first widening then boxing
      }
 }
 /*

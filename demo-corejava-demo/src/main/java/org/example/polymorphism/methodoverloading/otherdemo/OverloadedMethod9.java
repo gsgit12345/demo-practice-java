@@ -1,4 +1,4 @@
-package practice.overload;
+package org.example.polymorphism.methodoverloading.otherdemo;
 
 class OverloadedMethod9{       
       public void test(Integer i) {
@@ -9,9 +9,9 @@ class OverloadedMethod9{
       } 
       
       public static void main(String[] args) {
-            OverloadedMethod obj = new OverloadedMethod();
+            OverloadedMethod9 obj = new OverloadedMethod9();
             short s = 10;
-            obj.test(s);
+          //  obj.test(s);//you can not widen and then box
       }
 }
 /*

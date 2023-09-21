@@ -1,4 +1,4 @@
-package misc;
+package org.example.micell;
 
 
 
@@ -14,7 +14,7 @@ public class Overloaded7Method {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		OverloadedMethod6 kl=new OverloadedMethod6();
+		Overloaded7Method kl=new Overloaded7Method();
 		kl.test(8);//widening rule applicable
 		kl.test('a');
 	}

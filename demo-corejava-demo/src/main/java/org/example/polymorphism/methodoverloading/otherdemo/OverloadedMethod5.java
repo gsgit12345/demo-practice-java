@@ -1,6 +1,6 @@
 package practice.overload;
 
-class OverloadedMethod {
+class OverloadedMethod5 {
 	public void test(Object obj) {
 		System.out.println("Object");
 	}
@@ -14,8 +14,8 @@ class OverloadedMethod {
 	}
 
 	public static void main(String[] args) {
-		OverloadedMethod obj = new OverloadedMethod();
-		obj.test(null);
+		OverloadedMethod5 obj = new OverloadedMethod5();
+	//	obj.test(null);//compile time error
 	}
 }
 

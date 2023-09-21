@@ -1,4 +1,4 @@
-package methodoveriding.methodoverloading;
+package org.example.polymorphism.methodoverloading;
 
 public class OverloadedMethod5 {
 	public void test(Integer in)

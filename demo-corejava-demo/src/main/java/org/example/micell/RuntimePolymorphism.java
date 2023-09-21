@@ -1,4 +1,4 @@
-package output;
+package org.example.micell;
 
 public class RuntimePolymorphism 
 { 
@@ -24,6 +24,7 @@ class B extends A
     protected char c = 'B'; 
     char getSuperValue() 
     { 
-       // return super.c; 
+        //return super.c;//c is private can not be access
+        return 'c';
     } 
 } 

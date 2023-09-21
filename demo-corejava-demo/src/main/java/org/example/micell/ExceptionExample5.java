@@ -1,4 +1,4 @@
-package misc;
+package org.example.micell;
 
 class ExceptionExample5{ 
 	 

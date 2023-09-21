@@ -1,5 +1,5 @@
-package practice.methodhiding;
-class Parent{ 
+package org.example.methodhiding;
+class Parent4{
       public int var = 10;
      
       public void print(){ 
@@ -10,7 +10,7 @@ class Parent{
       }
 }
       
-class Child extends Parent{ 
+class Child2 extends Parent4{
       public int var = 30;
      
       public void print(){ 
@@ -25,17 +25,17 @@ class Child extends Parent{
 public class MainClass5 {
       
       public static void main(String[] args) {
-     Parent p = new Parent();
+     Parent4 p = new Parent4();
      System.out.println(p.var); //10
      p.print();//20 10
      System.out.println("---------------");
            
-     Child c = new Child();
+     Child2 c = new Child2();
      System.out.println(c.var);
      c.print(); //40  30 10
      System.out.println("---------------");
            
-     Parent pc = new Child(); //(OR p = c)
+     Parent4 pc = new Child2(); //(OR p = c)
      System.out.println(pc.var);//10
      pc.print(); //40 30 10
      System.out.println("---------------");

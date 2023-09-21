@@ -1,4 +1,4 @@
-package miscell;
+package org.example.micell;
 
 import java.util.ArrayList;
 import java.util.HashSet;

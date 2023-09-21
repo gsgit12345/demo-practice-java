@@ -1,4 +1,4 @@
-package methodoveriding.methodoverloading;
+package org.example.polymorphism.methodoverloading;
 
 public class OverloadedMethod4 {
 
@@ -17,7 +17,7 @@ public class OverloadedMethod4 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		OverloadedMethod4 jk=new OverloadedMethod4();
-		jk.test(null);//integer and char[] both falls at same level to object but different hierarchy
+		//jk.test(null);//integer and char[] both falls at same level to object but different hierarchy
 	}
 
 }

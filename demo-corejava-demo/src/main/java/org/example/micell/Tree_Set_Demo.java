@@ -1,8 +1,9 @@
-package miscell;
+package org.example.micell;
 
+import java.util.Comparator;
 import java.util.TreeSet;
 
-class The_Comparator implements Comparable<String> {
+class Custome implements Comparable<String> {
     public int compareTo(String str1)
     {
         String first_Str;
@@ -16,8 +17,7 @@ class The_Comparator implements Comparable<String> {
 public class Tree_Set_Demo {
     public static void main(String[] args)
     {
-        TreeSet<String> tree_set = new TreeSet<String>(new
-        The_Comparator());
+        TreeSet<String> tree_set = new TreeSet<String>((Comparator<? super String>) new Custome());
   
         tree_set.add("G");
         tree_set.add("E");

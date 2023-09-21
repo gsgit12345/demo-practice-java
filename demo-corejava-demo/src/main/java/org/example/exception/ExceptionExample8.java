@@ -1,5 +1,5 @@
-package practice.exception;
-class ExceptionExample {
+package org.example.exception;
+class ExceptionExample8 {
 public static void main(String[] args) {
    test();
 }

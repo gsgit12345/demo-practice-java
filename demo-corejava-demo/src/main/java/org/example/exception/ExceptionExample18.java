@@ -1,6 +1,6 @@
-package practice.exception;
+package org.example.exception;
 
-class ExceptionExample {
+class ExceptionExample18 {
 
 public static void main(String[] args) {
 System.out.println("Value of a :"+test());

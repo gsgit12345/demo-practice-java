@@ -1,4 +1,4 @@
-package misc;
+package org.example.micell;
 
 public class VolatileTest {
     //private static final Logger LOGGER = MyLoggerFactory.getSimplestLogger();

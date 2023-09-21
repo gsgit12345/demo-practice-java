@@ -1,10 +1,14 @@
-package practice.exception;
+package org.example.exception;
 
-class ExceptionExample {
+class ExceptionExample5 {
 	private static void test() {
 		try {
 		} catch (NullPointerException e) {
 		}
+	}
+	public static void main(String str[])
+	{
+
 	}
 }
 

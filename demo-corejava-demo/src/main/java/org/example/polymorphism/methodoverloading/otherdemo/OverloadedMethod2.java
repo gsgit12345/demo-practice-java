@@ -1,4 +1,4 @@
-package practice.overload;
+package org.example.polymorphism.methodoverloading.otherdemo;
 class A{}
    
 class B extends A{}

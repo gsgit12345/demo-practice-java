@@ -1,4 +1,4 @@
-package output;
+package org.example.micell;
 
 public class Maintest 
 { 
@@ -17,6 +17,6 @@ public class Maintest
   
     public static void main(String args[]) 
     { 
-        gfg(null); 
+     //   gfg(null); //ambigous error
     } 
 } //end cla

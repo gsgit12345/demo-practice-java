@@ -1,4 +1,4 @@
-package practice.overload;
+package org.example.polymorphism.methodoverloading.otherdemo;
 class OverloadedMethod13{    
 public void test(int... i) {
       System.out.println("method 1");
@@ -8,8 +8,8 @@ public void test(Integer... i) {
 } 
 
 public static void main(String[] args) {
-      OverloadedMethod obj = new OverloadedMethod();
-      obj.test(1);
+      OverloadedMethod13 obj = new OverloadedMethod13();
+   //   obj.test(1);
 }
 }
 /*

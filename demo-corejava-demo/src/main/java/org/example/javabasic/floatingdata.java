@@ -78,9 +78,9 @@ public class floatingdata {
 			 int hh=0b111;
 			 double dd8=1_11_11__78_90;
 			 double d6=1__23__6.7_7;
-			 double d7=_1_23_456._7_9;//_1_23_456 cannot be resolved to a variable
-			 double d0=1_23_456_._7_9;
-			 double d0=1_23_456._7_9_;
+			// double d7=_1_23_456._7_9;//_1_23_456 cannot be resolved to a variable
+			// double d0=1_23_456_._7_9;
+			// double d0=1_23_456._7_9_;
 			 
 	}
 

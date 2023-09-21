@@ -1,4 +1,9 @@
-package functionalinterface.inbuiltfunctional;
+package org.example.functionalinterface.inbuiltfunctional;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.UnaryOperator;
 
 public class AlteringListUsingUnaryOperator {
 

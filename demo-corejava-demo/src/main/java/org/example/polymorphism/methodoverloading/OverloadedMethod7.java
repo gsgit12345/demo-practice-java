@@ -1,4 +1,4 @@
-package methodoveriding.methodoverloading;
+package org.example.polymorphism.methodoverloading;
 
 public class OverloadedMethod7 {
 public void test(Long it)
@@ -14,7 +14,7 @@ public void test(Integer it)
 		OverloadedMethod7 it=new OverloadedMethod7();
 	//	it.test(null);//ambiguous
 		short s=10;
-		it.test(s);//you can not widen and then box
+	//	it.test(s);//you can not widen and then box
 	}
 
 }

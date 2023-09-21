@@ -1,10 +1,10 @@
-package practice.exception;
+package org.example.exception;
 
 import java.io.IOException;
 
-class ExceptionExample {
+class ExceptionExample3 {
    private static void test(){
-  try { } catch (IOException e) {}     
+  //try { } catch (IOException e) {}
    }
 }
 // ans---unreachable code

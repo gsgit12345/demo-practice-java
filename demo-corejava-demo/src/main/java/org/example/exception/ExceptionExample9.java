@@ -6,7 +6,7 @@ interface InterfaceTest{
        public void test() throws Exception; 
 }
        
-class ExceptionExample implements InterfaceTest{ 
+class ExceptionExample9 implements InterfaceTest{
        public void test() throws Exception, IOException, RuntimeException, Error {
        }
               

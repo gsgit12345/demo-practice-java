@@ -1,4 +1,4 @@
-package output;
+package org.example.micell;
 
 public class Main4 
 { 

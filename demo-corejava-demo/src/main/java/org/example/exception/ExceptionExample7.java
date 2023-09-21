@@ -1,11 +1,11 @@
-package practice.exception;
-class ExceptionExample {
+package org.example.exception;
+class ExceptionExample7 {
     public static void main(String[] args) {
    test();
     }
     private static void test()
     {
-   throw new Exception();
+   //throw new Exception();
     	
     }
 }

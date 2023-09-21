@@ -1,4 +1,4 @@
-package practice.exception;
+package org.example.exception;
 
 class ExceptionExample11{ 
 

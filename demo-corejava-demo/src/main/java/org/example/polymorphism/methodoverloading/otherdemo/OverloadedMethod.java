@@ -1,4 +1,4 @@
-package practice.overload;
+package org.example.polymorphism.methodoverloading.otherdemo;
 public class OverloadedMethod{
   public void test(String str) {
     System.out.println("String");

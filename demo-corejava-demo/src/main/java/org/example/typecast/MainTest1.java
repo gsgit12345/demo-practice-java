@@ -1,7 +1,7 @@
-package practice.typecast;
+package org.example.typecast;
 interface SInterface1 {}
 
-class SampleClass1 {}
+class SampleClass11 {}
 
 class MainTest1 {
 public static void main(String[] args) {

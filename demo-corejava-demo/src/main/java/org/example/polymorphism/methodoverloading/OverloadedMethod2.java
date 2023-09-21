@@ -1,4 +1,4 @@
-package methodoveriding.methodoverloading;
+package org.example.polymorphism.methodoverloading;
 
 public class OverloadedMethod2 {
 
@@ -13,7 +13,7 @@ public class OverloadedMethod2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		OverloadedMethod2 ob=new OverloadedMethod2();
-		ob.test(null, null);//more specific method is not resolved
+		//ob.test(null, null);//more specific method is not resolved
 	}
 
 }

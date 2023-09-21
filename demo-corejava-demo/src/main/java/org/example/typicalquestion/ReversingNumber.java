@@ -1,4 +1,4 @@
-package executerdemo.typicalquest;
+package org.example.typicalquestion;
 
 public class ReversingNumber {
 

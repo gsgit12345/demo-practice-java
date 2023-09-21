@@ -1,4 +1,4 @@
-package practice.typecast;
+package org.example.typecast;
 interface Interface1 { }
 interface Interface2 { }
 class Class1 implements Interface1 { }
@@ -9,7 +9,7 @@ Class1 c1 = new Class1();
 String str = new String("Hello"); //OR Integer str = new Integer(1); 
 
 Interface2 x = (Interface2)c1; //why compiler does not complain here?
-Interface2 y = (Interface2)str; //why compiler complains here?
+//Interface2 y = (Interface2)str; //why compiler complains here?
 }
 }
 /*

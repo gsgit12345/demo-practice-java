@@ -35,17 +35,18 @@ public class varargmethod {
 		System.out.println("hello"+asd.length);
 	}*/
 	
-	public static void m(double...ds ,int a)
+	//public static void m(double...ds ,int a)
 	{
-		
+		//compile time error vararg parameter must be last in the method parameter list
+
 	}
 	public static void m1(int y,double...ds )
 	{
 		
 	}
-	public static void m2(int... y,double...ds )
+	//public static void m2(/*int... y*/,double...ds)
 	{
-		
+		//compile time error vararg parameter must be last in the method parameter list
 	}
 	
 }

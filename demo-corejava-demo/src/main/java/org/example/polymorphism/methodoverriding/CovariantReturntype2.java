@@ -1,4 +1,4 @@
-package Stringquestion;
+package org.example.polymorphism.methodoverriding;
 
 class A {
 }

@@ -14,9 +14,9 @@ class OverloadedMethod10 {
 	}
 
 	public static void main(String[] args) {
-		OverloadedMethod obj = new OverloadedMethod();
+		OverloadedMethod10 obj = new OverloadedMethod10();
 		byte b = 10;
-		obj.test(b);
+		obj.test(b);//you can box and then box;
 	}
 }
 /*

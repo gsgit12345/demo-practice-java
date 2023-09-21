@@ -1,11 +1,11 @@
-package output;
+package org.example.micell;
 
 class Testrr2 { 
 	
     public static void main(String[] args) { 
-        for(int i = 1;1 ; i++) { 
+       // for(int i = 1;1 ; i++) {
             System.out.println("Hello"); 
-            break; 
-        } 
+         //   break;
+        //}
     } 
 } 
