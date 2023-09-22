@@ -1,4 +1,4 @@
-package algorithm.sorting;
+package org.example.customecollectionclass.sorting;
 
 public class EnumDemo {
 

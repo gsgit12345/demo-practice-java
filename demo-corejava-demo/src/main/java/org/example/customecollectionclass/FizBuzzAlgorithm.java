@@ -1,4 +1,4 @@
-package algorithm;
+package org.example.customecollectionclass;
 
 public class FizBuzzAlgorithm {
 

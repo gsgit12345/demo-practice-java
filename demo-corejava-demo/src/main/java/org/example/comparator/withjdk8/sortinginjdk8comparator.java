@@ -1,4 +1,4 @@
-package comparator.withjdk8;
+package org.example.comparator.withjdk8;
 
 import java.util.ArrayList;
 import java.util.Comparator;

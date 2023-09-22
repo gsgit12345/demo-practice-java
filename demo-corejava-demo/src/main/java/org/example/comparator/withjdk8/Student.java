@@ -1,4 +1,4 @@
-package comparator.withjdk8;
+package org.example.comparator.withjdk8;
 class Student{
     private String firstName;
     private String lastName;

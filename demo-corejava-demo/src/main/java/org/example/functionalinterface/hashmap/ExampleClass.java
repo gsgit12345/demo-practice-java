@@ -1,4 +1,4 @@
-package hashmapexam;
+package org.example.functionalinterface.hashmap;
 public class ExampleClass {
 	private ExampleClass(){
 

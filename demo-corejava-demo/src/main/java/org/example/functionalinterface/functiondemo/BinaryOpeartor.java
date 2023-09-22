@@ -1,4 +1,4 @@
-package functionalinterface.functiondemo;
+package org.example.functionalinterface.functiondemo;
 
 public class BinaryOpeartor {
 

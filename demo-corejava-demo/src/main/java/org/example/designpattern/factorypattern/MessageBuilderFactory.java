@@ -1,4 +1,4 @@
-package designepattern.factorypattern;
+package org.example.designpattern.factorypattern;
 
 public class MessageBuilderFactory {
 	

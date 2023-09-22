@@ -1,4 +1,4 @@
-package algorithm.sorting;
+package org.example.customecollectionclass.sorting;
 //JAVA Code for Merging two unsorted
 //arrays in sorted order
 import java.util.*;

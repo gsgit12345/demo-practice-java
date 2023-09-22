@@ -1,4 +1,4 @@
-package algorithm.linkedlist;
+package org.example.customecollectionclass.linkedlist;
 
 public class Node {
 

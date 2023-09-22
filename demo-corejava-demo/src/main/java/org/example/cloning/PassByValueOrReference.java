@@ -1,4 +1,4 @@
-package clonemethod;
+package org.example.cloning;
 
 class ObjectPassDemo {
     int a, b;

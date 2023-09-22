@@ -1,4 +1,4 @@
-package functionalinterface.inbuiltfunctional;
+package org.example.functionalinterface.inbuiltfunctional;
 
 import java.util.List;
 import java.util.function.Predicate;

@@ -1,4 +1,4 @@
-package functionalinterface.inbuiltfunctional;
+package org.example.functionalinterface.inbuiltfunctional;
 
 import java.util.ArrayList;
 import java.util.Arrays;

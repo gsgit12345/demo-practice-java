@@ -1,4 +1,4 @@
-package functionalinterface.customefunctional;
+package org.example.functionalinterface.customefunctional;
 
 public class java8functional {
 

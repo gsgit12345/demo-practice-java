@@ -1,4 +1,4 @@
-package designepattern.StrategyDesignpattern;
+package org.example.designpattern.StrategyDesignpattern;
 
 public class NetBankingPayment implements IPayment {
 

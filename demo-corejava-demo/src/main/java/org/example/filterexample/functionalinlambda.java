@@ -1,4 +1,4 @@
-package maxfilter;
+package org.example.filterexample;
 
 public class functionalinlambda {
 

@@ -1,4 +1,4 @@
-package comparator.withjdk8;
+package org.example.comparator.withjdk8;
 
 import java.util.Arrays;
 import java.util.function.Function;

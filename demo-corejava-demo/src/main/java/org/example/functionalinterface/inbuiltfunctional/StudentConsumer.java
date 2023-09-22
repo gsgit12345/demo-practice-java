@@ -1,4 +1,4 @@
-package functionalinterface.inbuiltfunctional;
+package org.example.functionalinterface.inbuiltfunctional;
 
 public class StudentConsumer {
     private int id;

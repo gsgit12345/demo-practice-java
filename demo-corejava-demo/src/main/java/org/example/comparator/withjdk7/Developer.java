@@ -1,4 +1,4 @@
-package comparator.withjdk7;
+package org.example.comparator.withjdk7;
 
 public class Developer {
 	

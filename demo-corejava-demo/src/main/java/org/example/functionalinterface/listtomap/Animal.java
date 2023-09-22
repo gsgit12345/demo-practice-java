@@ -1,4 +1,4 @@
-package functionalinterface.listtomap;
+package org.example.functionalinterface.listtomap;
 
 public class Animal {
 public int id;

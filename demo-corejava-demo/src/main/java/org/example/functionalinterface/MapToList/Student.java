@@ -1,4 +1,4 @@
-package functionalinterface.MapToList;
+package org.example.functionalinterface.MapToList;
 
 public class Student {
 	private int id;

@@ -1,4 +1,4 @@
-package designepattern.ChainOfResponsibility;
+package org.example.designpattern.ChainOfResponsibility;
 
 public class TwoThosandRupeesHandler extends CashHandler {
 	 public void fetchCash(long givenAmount)

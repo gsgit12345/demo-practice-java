@@ -1,4 +1,4 @@
-package clonemethod;
+package org.example.cloning;
 
 class ObjectReturnDemo {
     int a;

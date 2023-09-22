@@ -1,4 +1,4 @@
-package clonemethod;
+package org.example.cloning;
 class Employee implements Cloneable {
     int emp_id;
     String emp_name;

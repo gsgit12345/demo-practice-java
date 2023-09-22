@@ -1,4 +1,4 @@
-package functionalinterface.functiondemo;
+package org.example.functionalinterface.functiondemo;
 
 import java.util.ArrayList;
 import java.util.Arrays;

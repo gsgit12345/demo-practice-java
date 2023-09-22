@@ -1,4 +1,4 @@
-package FacadPattern;
+package org.example.designpattern.FacadPattern;
 
 public class ScheduleServer {
 	

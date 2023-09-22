@@ -1,4 +1,4 @@
-package intermediateope;
+package org.example.intermediateoperationinstream;
 
 import java.io.Serializable;
 import java.util.Random;

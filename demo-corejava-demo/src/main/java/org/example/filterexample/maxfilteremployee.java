@@ -1,4 +1,4 @@
-package maxfilter;
+package org.example.filterexample;
 
 import java.util.ArrayList;
 import java.util.List;

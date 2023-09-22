@@ -1,4 +1,4 @@
-package algorithm;
+package org.example.customecollectionclass;
 
 import java.util.ArrayList;
 import java.util.Hashtable;

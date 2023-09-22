@@ -1,11 +1,11 @@
-package practice.methodhiding;
-class Parent{ 
+package org.example.methodhiding;
+class Parent12{
     public static void print(){ 
     System.out.println("I am Parent"); 
     } 
 }
 
-class Child extends Parent{ 
+class Child22 extends Parent12{
     public static void print(){ 
     System.out.println("I am Child"); 
     } 
@@ -13,13 +13,13 @@ class Child extends Parent{
     
 public class MainClass { 
     public static void main(String args[]) { 
-    Parent parent = new Parent(); 
+    Parent12 parent = new Parent12();
     parent.print(); 
     
-    parent = new Child(); 
+    parent = new Child22();
     parent.print(); 
     
-    Child child = new Child(); 
+    Child22 child = new Child22();
     child.print(); 
     } 
 }
@@ -27,7 +27,7 @@ public class MainClass {
 Explanation: No. Static methods cannot be overridden.
 Static methods are not polymorphic and doesn't take part in run time or dynamic polymorphism and the decision as to which method will be called is 
 resolved at compile time based on the type alone.
-We can declare static methods with same signature in subclass, but it is not considered as overriding because there won’t be any run-time or 
+We can declare static methods with same signature in subclass, but it is not considered as overriding because there wonï¿½t be any run-time or 
 dynamic polymorphism.
 If a derived class defines a static method with same signature as a static method in base class, the method in the derived class hides 
 the method in the base class.

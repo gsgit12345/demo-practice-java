@@ -1,4 +1,4 @@
-package hashmapexam;
+package org.example.functionalinterface.hashmap;
 
 import java.util.HashMap;
 import java.util.IdentityHashMap;

@@ -1,4 +1,4 @@
-package intermediateope;
+package org.example.intermediateoperationinstream;
 
 import java.util.stream.Stream;
 

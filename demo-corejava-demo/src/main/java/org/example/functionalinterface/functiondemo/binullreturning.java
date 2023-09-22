@@ -1,4 +1,4 @@
-package functionalinterface.functiondemo;
+package org.example.functionalinterface.functiondemo;
 
 import java.util.function.BiFunction;
 import java.util.function.BinaryOperator;

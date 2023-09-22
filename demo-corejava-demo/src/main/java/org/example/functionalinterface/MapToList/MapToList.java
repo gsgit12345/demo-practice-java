@@ -1,4 +1,4 @@
-package functionalinterface.MapToList;
+package org.example.functionalinterface.MapToList;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package designepattern.PrototypePattern;
+package org.example.designpattern.PrototypePattern;
 public class User {
     String name;
     String email;

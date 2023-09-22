@@ -1,4 +1,4 @@
-package intermediateope;
+package org.example.intermediateoperationinstream;
 
 import java.util.Arrays;
 import java.util.List;

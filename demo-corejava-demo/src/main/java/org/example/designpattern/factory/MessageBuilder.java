@@ -1,4 +1,5 @@
-package factory;
+package org.example.designpattern.factory;
+
 
 public class MessageBuilder implements MessageBuilderSIC {
 

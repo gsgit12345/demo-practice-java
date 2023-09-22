@@ -1,4 +1,4 @@
-package designepattern.BuilderPattern;
+package org.example.designpattern.BuilderPattern;
 
 public class BuilderClient {
 

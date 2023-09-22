@@ -1,4 +1,4 @@
-package factory;
+package org.example.designpattern.factory;
 
 public class EmailSenderMessage implements SendMessageSpi {
 

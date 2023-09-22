@@ -1,4 +1,4 @@
-package functionalinterface.customefunctional;
+package org.example.functionalinterface.customefunctional;
 
 interface Square {
     int calculate(int x);
