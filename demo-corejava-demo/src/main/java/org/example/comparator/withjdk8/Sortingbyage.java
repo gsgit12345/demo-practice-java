@@ -1,5 +1,7 @@
 package comparator.withjdk8;
 
+import org.example.comparator.withjdk7.Developer;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;

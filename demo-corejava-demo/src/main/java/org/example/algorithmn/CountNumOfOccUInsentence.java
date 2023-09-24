@@ -17,11 +17,11 @@ public class CountNumOfOccUInsentence {
     }
    public static void main(String args[])
    {
-        String sentence;
-        Scanner scan = new Scanner(System.in);
+        String sentence="hello I am here to go outside of the scope";
+       // Scanner scan = new Scanner(System.in);
         
-        System.out.print("Enter a Sentence : ");
-        sentence = scan.nextLine();
+      //  System.out.print("Enter a Sentence : ");
+      //  sentence = scan.nextLine();
 		
         System.out.print("Total Number of Words in Entered Sentence is " + countWords(sentence));
    }
