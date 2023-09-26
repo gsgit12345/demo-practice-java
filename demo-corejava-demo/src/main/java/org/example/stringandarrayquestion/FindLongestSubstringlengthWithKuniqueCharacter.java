@@ -1,4 +1,4 @@
-package org.example.stringquestion;
+package org.example.stringandarrayquestion;
 
 import java.util.HashMap;
 import java.util.Map;

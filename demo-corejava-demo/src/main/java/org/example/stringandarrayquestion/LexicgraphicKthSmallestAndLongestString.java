@@ -1,4 +1,4 @@
-package org.example.stringquestion;
+package org.example.stringandarrayquestion;
 
 import java.util.Arrays;
 import java.util.Stack;
