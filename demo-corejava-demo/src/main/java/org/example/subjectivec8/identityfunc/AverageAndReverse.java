@@ -1,6 +1,5 @@
 package org.example.subjectivec8.identityfunc;
 
-import com.sun.org.apache.xpath.internal.compiler.Keywords;
 import org.apache.logging.log4j.util.PropertySource;
 
 import java.util.*;

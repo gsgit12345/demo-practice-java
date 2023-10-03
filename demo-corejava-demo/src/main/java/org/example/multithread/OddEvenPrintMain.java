@@ -92,7 +92,7 @@ public class OddEvenPrintMain {
     }
 }
 
-/* Use a variable called boolean odd. If you want to print odd number, it’s value should be true and vice versa for even number.
+/* Use a variable called boolean odd. If you want to print odd number, its value should be true and vice versa for even number.
 Create two methods printOdd() and printEven(), one will print odd numbers and other will print even numbers.
 Create two threads, t2 for odd and t1 for even.
 t1 will call printEven() method and t2 will call printOdd() method simultaneously.

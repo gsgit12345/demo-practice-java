@@ -1,6 +1,5 @@
 package org.example.subjectivec8.identityfunc;
 
-import com.sun.jmx.snmp.internal.SnmpSubSystem;
 
 import java.util.*;
 import java.util.function.Function;

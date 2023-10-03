@@ -1,6 +1,5 @@
 package org.example.arrays.onedimensional;
 
-import com.sun.java.swing.plaf.windows.WindowsTextAreaUI;
 
 import java.util.Arrays;
 import java.util.HashSet;
