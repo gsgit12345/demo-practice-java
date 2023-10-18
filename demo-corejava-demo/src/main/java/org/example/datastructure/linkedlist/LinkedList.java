@@ -1,6 +1,5 @@
 package org.example.datastructure.linkedlist;
 
-import org.springframework.web.servlet.tags.EditorAwareTag;
 
 public class LinkedList<E> {
     Node head;
@@ -176,7 +175,21 @@ return data;
             rigts--;
         }
     }
+public int findMidelementInLinkedList()
+{
+    //in  single traversal and without using size property
+    int data=0;
+    Node slowPointer=head;
+    Node fastPointer=head;
+    while(fastPointer.next!=null && fastPointer.next.next!=null)
+    {
+        slowPointer=slowPointer.next;
+        fastPointer= fastPointer.next.next;
+    }
+    data=slowPointer.data;
 
+    return data;
+}
     @Override
     public String toString() {
         return "LinkedList{" +
