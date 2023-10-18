@@ -190,6 +190,11 @@ public int findMidelementInLinkedList()
 
     return data;
 }
+public LinkedList<Integer> mergeTwoSortedLinkedList(LinkedList<Integer> linkedList1,LinkedList<Integer> linkedList2)
+{
+    LinkedList<Integer> response=new LinkedList<>();
+    return response;
+}
     @Override
     public String toString() {
         return "LinkedList{" +
