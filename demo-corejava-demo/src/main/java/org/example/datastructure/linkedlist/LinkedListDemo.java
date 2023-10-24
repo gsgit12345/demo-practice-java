@@ -14,16 +14,21 @@ public class LinkedListDemo {
         linkedList.addLast(60);
         LinkedList linkedList2=new LinkedList();
         linkedList2.addLast(71);
+        linkedList2.addLast(71);
         linkedList2.addLast(60);
+        linkedList2.addLast(60);
+        linkedList2.addLast(18);
         linkedList2.addLast(18);
         linkedList2.addLast(19);
         linkedList2.addLast(15);
         linkedList2.addLast(180);
         LinkedList linkedList3=new LinkedList();
-        linkedList3= linkedList2.mergeSortLinkedList(linkedList2.head,linkedList2.tail);
-      //LinkedList<Integer> result= linkedList3.mergeTwoSortedLinkedList(linkedList,linkedList2);
+      //  linkedList3= linkedList2.mergeSortLinkedList(linkedList2.head,linkedList2.tail);
+         linkedList2.removeDuplicateInSortedLinkedList();
+
+        //LinkedList<Integer> result= linkedList3.mergeTwoSortedLinkedList(linkedList,linkedList2);
        // LinkedList<Integer> result2= linkedList3.mergeTwoSortedLinkedListWithoutAddLastMethod(linkedList,linkedList2);
-        linkedList3.displayLinkedList();
+        linkedList2.displayLinkedList();
 
         // System.out.println(linkedList);
 

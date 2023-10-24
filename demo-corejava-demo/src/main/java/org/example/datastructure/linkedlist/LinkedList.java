@@ -240,7 +240,7 @@ public class LinkedList<E> {
     }
 
     public LinkedList mergeSortLinkedList(Node head, Node tail) {
-        if (head == tail) {
+        if (head == tail) {  //if in the linked list there is only one element
             LinkedList list = new LinkedList();
             list.addLast(head.data);
             return list;
@@ -253,6 +253,48 @@ public class LinkedList<E> {
         result = mergeTwoSortedLinkedList(firstHalf, secondHalf);
 
         return result;
+    }
+public void removeDuplicateInSortedLinkedList()
+{
+    //time complexity big(n) and space big(1)
+    LinkedList result=new LinkedList();
+    if(this==null)
+        return ;
+    while(this.Size>0)
+    {
+       int data= this.getFirstNode();//time complexity big(n)
+         this.removeFirst();
+         if(result.Size==0||result.tail.data!=data)
+         {
+             result.addLast(data);
+         }
+    }
+    this.head=result.head;
+    this.tail=result.tail;
+    this.Size=result.Size;
+
+    /*
+
+
+        LinkedList result=new LinkedList();
+    if(linkedList==null)
+        return null;
+    while(linkedList.Size>0)
+    {
+       int data= linkedList.getFirstNode();//time complexity big(n)
+        linkedList.removeFirst();//time complexity big(n)
+         if(result.Size==0||result.tail.data!=data)
+         {
+             result.addLast(data);//time complexity big(n)
+         }
+    }
+return result;
+     */
+
+}
+    public void removeDuplicateInSortedLinkedListSecondWay(LinkedList list)
+    {
+
     }
 
     public LinkedList<Integer> mergeTwoSortedLinkedListWithoutAddLastMethod(LinkedList<Integer> linkedList1, LinkedList<Integer> linkedList2) {
