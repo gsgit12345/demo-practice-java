@@ -7,11 +7,23 @@ public class LinkedListDemo {
         //linkedList.addAtFirst(40);
        // linkedList.displayLinkedList();
         linkedList.addLast(10);
-        linkedList.addLast(0);
         linkedList.addLast(20);
         linkedList.addLast(30);
+        linkedList.addLast(40);
         linkedList.addLast(50);
-        linkedList.addLast(80);
+        linkedList.addLast(60);
+        LinkedList linkedList2=new LinkedList();
+        linkedList2.addLast(71);
+        linkedList2.addLast(60);
+        linkedList2.addLast(18);
+        linkedList2.addLast(19);
+        linkedList2.addLast(15);
+        linkedList2.addLast(180);
+        LinkedList linkedList3=new LinkedList();
+        linkedList3= linkedList2.mergeSortLinkedList(linkedList2.head,linkedList2.tail);
+      //LinkedList<Integer> result= linkedList3.mergeTwoSortedLinkedList(linkedList,linkedList2);
+       // LinkedList<Integer> result2= linkedList3.mergeTwoSortedLinkedListWithoutAddLastMethod(linkedList,linkedList2);
+        linkedList3.displayLinkedList();
 
         // System.out.println(linkedList);
 
@@ -31,8 +43,8 @@ public class LinkedListDemo {
       //  linkedList.reverseLinkedList();
       //int data=  linkedList.removeFirst();
         //System.out.println("data is::"+data);
-      int data=  linkedList.findMidelementInLinkedList();
-        System.out.println("data is::"+data);
-        linkedList.displayLinkedList();
+     // int data=  linkedList.findMidelementInLinkedList();
+       // System.out.println("data is::"+data);
+        //linkedList.displayLinkedList();
     }
 }
