@@ -1,6 +1,8 @@
 package org.example.leetcode.numeric;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class TwoSomeProblem {
     public static void main(String str[])
@@ -28,9 +30,14 @@ Output: [0,1]
 
         int [] output= twoSome(num,target1);
        System.out.println(Arrays.toString(output));
+
+        int [] output2=twoSomeInBigN(num,target1);
+        System.out.println(Arrays.toString(output2));
+
     }
     public static int[] twoSome(int [] nums,int target)
     {
+        //    // Time complexity: O(n2)
         for(int i=0;i<nums.length;i++)
         {
             for(int j=i+1 ;j<nums.length;j++)
@@ -43,4 +50,22 @@ Output: [0,1]
         }
         return new int[]{};
     }
+
+    public static int[] twoSomeInBigN(int [] nums,int target)
+    {
+        Map<Integer,Integer> map=new HashMap<>();
+        for(int i=0;i<nums.length;i++)
+        {
+            int secondNumber=target-nums[i];
+            if(map.containsKey(secondNumber))
+            {
+                return  new int []{map.get(secondNumber),i};
+            }else {
+                map.put(nums[i], i);
+
+            }
+        }
+        return new int[]{};
+    }
+
 }
