@@ -20,6 +20,7 @@ public class LinkedList<E> {
         } else {
             tail.next = temp;
             tail = temp;
+
         }
         Size++;
     }
