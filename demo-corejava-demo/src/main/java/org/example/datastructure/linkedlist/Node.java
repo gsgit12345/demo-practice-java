@@ -2,14 +2,14 @@ package org.example.datastructure.linkedlist;
 
 public class Node {
     int data;
-    Node next;
-    Node(int val, Node next)
+  public  Node next;
+    public Node(int val, Node next)
     {
         this.data = val;
         this.next = next;
     }
-    Node() {}
-    Node(int val) { this.data = val; }
+    public Node() {}
+    public Node(int val) { this.data = val; }
 
     @Override
     public String toString() {
