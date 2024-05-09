@@ -28,6 +28,8 @@ public class PassByValueOrReference {
         ObjectPassDemo ob1 = new ObjectPassDemo(100, 22);
         ObjectPassDemo ob2 = new ObjectPassDemo(100, 22);
         ObjectPassDemo ob3 = new ObjectPassDemo(-1, -1);
+
+        //pass by value
  
         // Checking whether object are equal as custom
         // values
