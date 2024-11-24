@@ -1,4 +1,4 @@
-package concurrency.condition;
+package org.example.multithread.condition;
 
 import java.util.ArrayList;
 
@@ -10,7 +10,6 @@ public ArrayList array=null;
 	}
 	public void consume()throws Exception
 	{
-		
 		synchronized (array) {
 			if(array.isEmpty())
 			{

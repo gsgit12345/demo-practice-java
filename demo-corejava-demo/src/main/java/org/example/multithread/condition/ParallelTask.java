@@ -1,4 +1,4 @@
-package concurrency.condition;
+package org.example.multithread.condition;
 
 public class ParallelTask implements Runnable {
 	private Thread predecessor;

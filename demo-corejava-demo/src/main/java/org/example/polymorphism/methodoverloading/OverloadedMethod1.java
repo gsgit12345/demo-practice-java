@@ -5,10 +5,10 @@ public class OverloadedMethod1 {
 	{
 		System.out.println("string version");
 	}
-	/*public void test(Object test)
+	public void test(Object test)
 	{
 		System.out.println("Object version");
-	}*/
+	}
 	public void test(StringBuffer test)
 	{
 		System.out.println("StringBuffer version");
@@ -17,7 +17,7 @@ public class OverloadedMethod1 {
 		// TODO Auto-generated method stub 
 		
 		OverloadedMethod1 over1=new OverloadedMethod1();
-	//	over1.test(null); //ambiguous method error
+		//over1.test(null); //ambiguous method error
 
 	}
 

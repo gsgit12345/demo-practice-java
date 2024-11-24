@@ -1,4 +1,4 @@
-package concurrency.condition;
+package org.example.multithread.condition;
 
 public class SequenceDisplay {
 	public static void main(String[] args) {

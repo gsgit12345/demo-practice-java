@@ -10,7 +10,7 @@ class ObjectReturnDemo {
     ObjectReturnDemo incrByTen()
     {
         ObjectReturnDemo temp
-            = new ObjectReturnDemo(a + 10);
+            = new ObjectReturnDemo(a += 10);
         return temp;
     }
 }

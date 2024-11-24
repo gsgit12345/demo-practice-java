@@ -1,4 +1,4 @@
-package executerdemo.Thread;
+package org.example.multithread;
 
 class MyRunnable3 implements Runnable{
 	 

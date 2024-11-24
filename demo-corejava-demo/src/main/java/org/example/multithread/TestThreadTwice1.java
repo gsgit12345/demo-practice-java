@@ -1,4 +1,4 @@
-package executerdemo.Thread;
+package org.example.multithread;
 
 public class TestThreadTwice1 extends Thread{   
 public void run(){   

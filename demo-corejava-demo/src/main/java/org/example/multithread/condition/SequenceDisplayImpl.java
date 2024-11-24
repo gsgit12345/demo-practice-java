@@ -1,4 +1,4 @@
-package concurrency.condition;
+package org.example.multithread.condition;
 
 class SequenceDisplayImpl implements Runnable {
 

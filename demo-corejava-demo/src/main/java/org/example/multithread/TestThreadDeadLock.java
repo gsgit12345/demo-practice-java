@@ -1,4 +1,4 @@
-package executerdemo;
+package org.example.multithread;
 public class TestThreadDeadLock {
 	   public static Object Lock1 = new Object();
 	   public static Object Lock2 = new Object();

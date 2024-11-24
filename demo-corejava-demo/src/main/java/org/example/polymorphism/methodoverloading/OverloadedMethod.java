@@ -8,7 +8,7 @@ public class OverloadedMethod {
 	}
 	public void test(Object test)
 	{
-		System.out.println("string version");
+		System.out.println("object version");
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

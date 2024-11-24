@@ -6,12 +6,12 @@ public class TestDemo {
 
         double mass = 10.0;
         double height = 3.7;
-        PlasticTree plasticTree = new PlasticTree(mass, height);
-        PlasticTree plasticopy2=  (PlasticTree) plasticTree.copy();
-        System.out.println("property::"+plasticopy2.getName());
-        PineTree pineprototype = new PineTree(mass, height);
+        AppleTree appleTree = new AppleTree(mass, height);
+        AppleTree applecopy2=  (AppleTree) appleTree.copy();
+        System.out.println("property::"+appleTree.getName());
+        MangoTree mangoprototype = new MangoTree(mass, height);
 
-        PineTree pineTree=  (PineTree) pineprototype.copy();
+        MangoTree pineTree=  (MangoTree) mangoprototype.copy();
         System.out.println("property pine tree::"+pineTree.getType());
 
 

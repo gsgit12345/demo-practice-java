@@ -4,59 +4,71 @@ import java.util.Arrays;
 
 public class ArrangeZeroOneSide {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		int arr[]= {1,4,6,0,9,0,2,0};
-		
-		int arr2[]=arrangeZeroOneSide(arr);
-		System.out.println(Arrays.toString(arr2));
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
 
-	}
+        int arr[] = {1, 4, 6, 0, 9, 0, 2, 0};
+        int arr1[] = {1, 1, 1, 0, 1, 0, 1, 0};
 
-	
-	public static int [] arrangeZeroOneSide(int array[])
-	{
-		int j=0;
-		
-		for(int i=0;i<array.length;i++)
-		{
-		
-			if(array[i]!=0)
-			{
-			array[j++]=array[i];
-			}
-		}
-			while(j<array.length)
-				array[j++]=0;
-		
-			
-		return array;
-	}
-	
-	
+        // int arr2[] = arrangeZeroRightSide(arr);
+        int arr3[] = arrangeZeroLeftSide(arr);
 
-	
-	public static int [] arrangeZeroToTheStart(int array[])
-	{
-		int j=array.length-1;
-		
-		for(int i=array.length-1;i>=0;i--)
-		{
-			if(array[i]!=0)
-			{
-			array[j]=array[i];
-			j--;
-			}
-			
-		}
+        System.out.println(Arrays.toString(arr3));
 
-		while(j>=0)
-		{
-			array[j]=0;
-			j--;
-		}
-		return array;
-	}
+    }
+
+
+    public static int[] arrangeZeroRightSide(int array[]) {
+        int count = 0;
+
+        for (int i = 0; i < array.length; i++) {
+
+            if (array[i] != 0) {
+                array[count++] = array[i];
+            }
+        }
+        while (count < array.length)
+            array[count++] = 0;
+
+
+        return array;
+    }
+
+    public static int[] arrangeZeroLeftSide(int array[]) {
+        int count = 0;
+
+        for (int i = 0; i < array.length; i++) {
+
+            if (array[i] == 0) {
+                array[i] = 0;
+                count++;
+            }
+        }
+        //not working
+        while (count < array.length)
+            array[count++] = array[count];
+
+
+        return array;
+    }
+
+
+    public static int[] arrangeZeroToTheStart(int array[]) {
+        int j = array.length - 1;
+
+        for (int i = array.length - 1; i >= 0; i--) {
+            if (array[i] != 0) {
+                array[j] = array[i];
+                j--;
+            }
+
+        }
+
+        while (j >= 0) {
+            array[j] = 0;
+            j--;
+        }
+        return array;
+    }
 
 }

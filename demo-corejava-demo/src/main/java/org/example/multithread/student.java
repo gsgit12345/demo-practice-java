@@ -1,4 +1,4 @@
-package executerdemo;
+package org.example.multithread;
 
 class book
 {

@@ -1,4 +1,4 @@
-package concurrency.condition;
+package org.example.multithread.condition;
 
 class ThreadJoinDemo extends Thread{
 	 static ThreadJoinDemo thread1;
