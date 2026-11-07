@@ -47,8 +47,10 @@ public class DeleteInsertInArray {
 
     public static void deleteElementFromArrayDifferentApproach(int array[], int index) {
 
-        int deletebyindex[] = IntStream.range(0, array.length).filter(i -> i != index).map(i -> array[i]).toArray(); //delete by index
-        int deletebyvalue[] = IntStream.range(0, array.length).filter(i -> index != array[i]).map(i -> array[i]).toArray();//delete by value
+        int deletebyindex[] = IntStream.range(0, array.length).filter(i -> i != index).
+                map(i -> array[i]).toArray(); //delete by index
+        int deletebyvalue[] = IntStream.range(0, array.length).filter(i -> index != array[i]).
+                map(i -> array[i]).toArray();//delete by value
         System.out.println(Arrays.toString(deletebyvalue));
 
         //useing arraylist
@@ -56,7 +58,7 @@ public class DeleteInsertInArray {
         ArrayList<Integer> arrayList = (ArrayList<Integer>) Arrays.stream(array).boxed().collect(Collectors.toList());
 
         arrayList.remove(index); //delete by index
-        arrayList.remove(new Integer(index));//delete by value
+        //arrayList.remove(new Integer(index));//delete by value
 
         int removed[] = arrayList.stream().mapToInt(Integer::intValue).toArray();
 
@@ -80,14 +82,14 @@ public class DeleteInsertInArray {
         System.out.println(Arrays.toString(newarr));
 
         //second way
-        Integer objectArray[] = {new Integer(2), new Integer(3), new Integer(4), new Integer(7), new Integer(9), new Integer(10)};
-        List<Integer> list = new ArrayList<Integer>(
-                Arrays.asList(objectArray));
+       // Integer objectArray[] = {new Integer(2), new Integer(3), new Integer(4), new Integer(7), new Integer(9), new Integer(10)};
+       // List<Integer> list = new ArrayList<Integer>(
+           ///     Arrays.asList(objectArray));
         int position = 2;
         int element = 12;
         // Adding the element at position
-        list.add(position - 1, element);
-        System.out.println("after adding the element::" + list.toString());
+      //  list.add(position - 1, element);
+      //  System.out.println("after adding the element::" + list.toString());
 
     }
     public static void insertElementInSortedArray(int array[],int value)

@@ -1,4 +1,4 @@
-package streamtut;
+package org.example.stream;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,8 @@ public class PrintAllNameWithA {
 		// TODO Auto-generated method stub
 		List<Developer> allDev=getDevelopers();
 		
-		List<String> name=allDev.stream().filter((s)->s.getName().startsWith("h")).map((s)->s.getName()).collect(Collectors.toList());
+		List<String> name=allDev.stream().filter((s)->s.getName().startsWith("h")).
+				map((s)->s.getName()).collect(Collectors.toList());
 		
 		name.forEach((s)->System.out.println(s));
 		

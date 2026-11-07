@@ -6,16 +6,12 @@ public class EvenOdd {
 		// TODO Auto-generated method stub
 		EvenOdd(4);
 	}
-
-	
 	public static void EvenOdd(int num)
 	{
 		if(num==1)
 		{
 			System.out.println("number is odd");
 		}
-		
-		
 		if(num%2==0)
 		{
 			System.out.println("number is even:"+num);

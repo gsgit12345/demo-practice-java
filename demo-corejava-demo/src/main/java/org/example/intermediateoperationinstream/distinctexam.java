@@ -1,4 +1,4 @@
-package intermediateope;
+package org.example.intermediateoperationinstream;
 
 import java.util.List;
 import java.util.stream.Collectors;

@@ -1,4 +1,4 @@
-package sortmapbykeyandvalue;
+package org.example.mapquestion;
 
 import java.util.ArrayList;
 import java.util.Comparator;

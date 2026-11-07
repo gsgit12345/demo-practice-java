@@ -1,4 +1,4 @@
-package executerdemo;
+package org.example.multithread;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;

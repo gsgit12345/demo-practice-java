@@ -1,4 +1,4 @@
-package StringJoinerex;
+package org.example.stringjoin;
 
 public class Game {
     String name;

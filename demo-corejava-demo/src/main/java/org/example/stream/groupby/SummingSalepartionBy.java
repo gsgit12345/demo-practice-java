@@ -1,4 +1,4 @@
-package streamtut.groupby;
+package org.example.stream.groupby;
 
 import java.util.Arrays;
 import java.util.List;
@@ -26,7 +26,8 @@ public class SummingSalepartionBy {
 		
 		
 		List<SaleData> sale=Arrays.asList(saleData);
-		Map<String,Double> averageSaleByCity=sale.stream().collect(Collectors.groupingBy(SaleData::getCity,Collectors.averagingInt(SaleData::getNumSale)));
+		Map<String,Double> averageSaleByCity=sale.stream().collect(Collectors.groupingBy
+				(SaleData::getCity,Collectors.averagingInt(SaleData::getNumSale)));
 		
 		System.out.println(averageSaleByCity);
 		

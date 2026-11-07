@@ -1,4 +1,4 @@
-package executerdemo.Thread;
+package org.example.multithread;
 
 class CustomThread extends Thread {
 	 

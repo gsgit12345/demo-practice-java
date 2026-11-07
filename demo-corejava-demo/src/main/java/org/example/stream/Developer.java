@@ -1,4 +1,4 @@
-package streamtut;
+package org.example.stream;
 
 public class Developer {
 	

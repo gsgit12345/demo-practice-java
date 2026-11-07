@@ -3,6 +3,7 @@ package org.example.functionalinterface.inbuiltfunctional;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.BinaryOperator;
 import java.util.function.UnaryOperator;
 
 public class AlteringListUsingUnaryOperator {
@@ -16,7 +17,12 @@ public class AlteringListUsingUnaryOperator {
                 x -> x + 1);
 
         System.out.println(result); // [3, 5, 7, 9, 11, 13, 15, 17, 19, 21]
+        UnaryOperator<Integer>  integerUnaryOperator=(x)->x+10;
+        BinaryOperator<Integer> binaryOperator=(b,m)->b+m;
+        binaryOperator.apply(1,3);
+        System.out.println(integerUnaryOperator.apply(10));
 
+        List<Integer> list1=Arrays.asList(1,2,3,45);
     }
 
     public static <T> List<T> math(List<T> list,

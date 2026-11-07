@@ -27,7 +27,11 @@ public class GFG {
     // Driver Code 
     public static void main(String[] args) 
     { 
-        String str = "GeeksForGeeks"; 
+        String str = "GeeksForGeeks";
+        String  st= "hello";
+       // Distinct Substring: [el, he, ll, lo]
+
+
         int k = 3; 
         getSmallestAndLargest(str, k); 
     } 

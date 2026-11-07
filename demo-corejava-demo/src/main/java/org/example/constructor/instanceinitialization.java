@@ -1,35 +1,68 @@
-package constructordemo;
+package org.example.constructor;
 
 class parentcls {
-	parentcls() 
-	{
-		System.out.println("parentcls-Constructor Called");
-		
-	}
- 
+    parentcls() {
+        System.out.println("parentcls-Constructor Called");
+
+    }
+
     {
         System.out.println("parentcls-IIB block");
     }
+
+    static {
+        System.out.println("parentcls-Static  block");
+
+    }
 }
- 
+
 // Child class
 class childcls extends parentcls {
-	childcls()
-    {
+    childcls() {
         super();
         System.out.println("childcls-Constructor Called");
     }
+
     {
         System.out.println("childcls-IIB block");
     }
 
+    static {
+        System.out.println("child-Static  block");
+
+    }
+
 }
+
 public class instanceinitialization {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
 
-		childcls pr=new childcls();
-	}
+        childcls pr = new childcls();//
+        /*
+        parentcls-Static  block
+        child-Static  block
+        parentcls-IIB block
+        parentcls-Constructor Called
+         childcls-IIB block
+         childcls-Constructor Called
+         */
+        // parentcls p=new parentcls(); //only parents block executed
+        parentcls p = new childcls();
+        /*
+        parentcls-Static  block
+child-Static  block
+parentcls-IIB block
+parentcls-Constructor Called
+childcls-IIB block
+childcls-Constructor Called
+parentcls-IIB block
+parentcls-Constructor Called
+childcls-IIB block
+childcls-Constructor Called
+
+         */
+    }
 
 }

@@ -1,4 +1,4 @@
-package constructordemo;
+package org.example.constructor;
 
 class Test {
 	 

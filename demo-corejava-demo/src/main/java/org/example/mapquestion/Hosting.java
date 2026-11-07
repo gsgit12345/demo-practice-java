@@ -1,4 +1,4 @@
-package sortmapbykeyandvalue;
+package org.example.mapquestion;
 
 public class Hosting {
     private int Id;

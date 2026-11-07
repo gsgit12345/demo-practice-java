@@ -47,14 +47,15 @@ public class MapSortByValue {
 		toMap(Entry::getKey,Entry::getValue, (oldVl,newVal)->oldVl,LinkedHashMap::new));
 		//{software=50, technology=70, USA=100, jobs=200, opportunity=200}
 		System.out.println("newsorttt::"+hasMap);
-		Map<String, Integer>  hasMap2=	wordCounts.entrySet().stream().sorted(Map.Entry.<String,Integer>comparingByValue()).collect(Collectors.toMap(Entry::getKey, Entry::getValue));
+		Map<String, Integer>  hasMap2=	wordCounts.entrySet().stream().sorted(Map.Entry.<String,Integer>
+				comparingByValue()).collect(Collectors.toMap(Entry::getKey, Entry::getValue));
 		System.out.println("newsort::"+hasMap2);
 		return hasMap2;
 	}
 	public static Map<String,Integer> sortByKey(final Map<String, Integer> wordCounts)
 	{
 		Map<String, Integer>  hasMap=	wordCounts.entrySet().stream().sorted
-				(Map.Entry.<String,Integer>comparingByKey()).
+				(Map.Entry.comparingByKey()).
 				collect(Collectors.toMap(Entry::getKey,Entry::getValue, (e,e1)->e,LinkedHashMap::new));		
 		return hasMap;
 	}

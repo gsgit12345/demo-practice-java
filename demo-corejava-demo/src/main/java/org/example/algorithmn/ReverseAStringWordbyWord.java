@@ -1,5 +1,10 @@
 package org.example.algorithmn;
 
+import java.util.Comparator;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
 public class ReverseAStringWordbyWord {
 public static void main(String str[])
 {
@@ -7,6 +12,11 @@ public static void main(String str[])
 	
 	reverseWords(s.toCharArray());
 	reverseChar(s.toCharArray());
+String vo="aeiou";
+
+           String stt=Stream.of(s.split(" ")).map(word->new StringBuilder(word).reverse().toString())
+                        .collect(Collectors.joining(" "));
+  System.out.println(" ss::"+stt);
 }
 public static  void reverseWords(char[] s) {
     int i=0;

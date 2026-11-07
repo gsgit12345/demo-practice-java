@@ -1,4 +1,4 @@
-package constructordemo;
+package org.example.constructor;
 
 import java.util.ArrayList;
 import java.util.List;

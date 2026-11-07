@@ -1,4 +1,4 @@
-package StringJoinerex;
+package org.example.stringjoin;
 
 import java.util.Arrays;
 import java.util.List;

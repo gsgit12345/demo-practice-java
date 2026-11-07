@@ -1,4 +1,4 @@
-package terminaloperation;
+package org.example.terminaloperation;
 
 import java.util.ArrayList;
 import java.util.List;

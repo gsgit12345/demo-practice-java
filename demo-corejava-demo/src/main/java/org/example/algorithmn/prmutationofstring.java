@@ -6,7 +6,7 @@ public class prmutationofstring {
 		// TODO Auto-generated method stub
 		prmutationofstring p=new prmutationofstring();
 		
-		String str="hello";
+		String str="ABCc";
 		int n = str.length();
 		permutation(str,0,n-1);
 	}

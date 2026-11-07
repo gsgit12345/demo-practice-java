@@ -5,10 +5,10 @@ import java.util.Arrays;
 public class CyclicRotateArray {
     public static void main(String str[]) {
         int array[] = {1,  3, 4,5, 6};
-        int rotate = 3;
+        int rotate = 2;
         //   https://www.techiedelight.com/right-rotate-an-array-k-times/
         // rotateByOne(array);
-        //  rotateArrayByKPosition(array, rotate);
+         rotateArrayByKPosition(array, rotate);
         //int n = array.length;
        // int arr[] = rotateArray(array, n, rotate);
         //System.out.println(Arrays.toString(arr));
@@ -18,7 +18,7 @@ public class CyclicRotateArray {
         int[] arr2 = { 1, 5, 7, -1, 5 };
         int k = 10;
         // Function Call
-        getPareCountInArray(arr2,k);
+       // getPareCountInArray(arr2,k);
     }
 
     public static void rotateArrayByKPosition(int array[], int rotateIndex) {

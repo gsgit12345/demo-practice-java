@@ -1,4 +1,4 @@
-package executerdemo.Thread;
+package org.example.multithread;
 
 class MyThread extends Thread { 
 	  //don't override run() method 

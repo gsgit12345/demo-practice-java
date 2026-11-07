@@ -1,4 +1,4 @@
-package practice.arrayques;
+package org.example.arrays.onedimensional;
 
 //https://www.geeksforgeeks.org/top-50-array-coding-problems-for-interviews/
 public class GetMissingNumINArray {

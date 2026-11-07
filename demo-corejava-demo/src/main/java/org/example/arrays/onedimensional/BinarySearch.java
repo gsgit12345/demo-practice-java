@@ -18,8 +18,6 @@ public class BinarySearch {
 	public static int binarySearchIterative(int array[], int key) {
 		int low = 1;
 		int high = array.length;
-
-		
 		System.out.println("in search");
 		while (low <= high) {
 			int mid = (low + high) / 2;

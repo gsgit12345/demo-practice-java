@@ -16,8 +16,9 @@ public class DisplayObjectNotSort {
 		Set<Map.Entry<Object, Object>>  cntMap=prop.entrySet();
 		
 		//LinkedHashMap<String, String> stream=
-				
-	LinkedHashMap<String, String>	sort=cntMap.stream().collect(Collectors.toMap(k-> (String)k.getKey(), e-> (String) e.getValue()))
+
+	LinkedHashMap<String, String>	sort=cntMap.stream().collect(Collectors.toMap
+					(k-> (String)k.getKey(), e-> (String) e.getValue()))
 		.entrySet().stream().sorted(Map.Entry.comparingByKey()).
 		collect(Collectors.toMap(Map.Entry::getKey,Map.Entry::getValue ,(old,oldnew)->old,LinkedHashMap::new));
 	

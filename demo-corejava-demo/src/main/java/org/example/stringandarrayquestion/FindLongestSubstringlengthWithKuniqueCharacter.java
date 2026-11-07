@@ -58,8 +58,6 @@ int kUniqueChar=1;
             }
             if(frequencyMap.size()==kuniquechar)
             {
-
-
                 int len=j-i+1;
                 max=max<len?len:max;
             }

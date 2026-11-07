@@ -1,4 +1,4 @@
-package sortmapbykeyandvalue.filtermap;
+package org.example.mapquestion.filtermap;
 
 import java.util.HashMap;
 import java.util.List;

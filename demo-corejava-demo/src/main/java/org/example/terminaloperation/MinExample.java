@@ -1,4 +1,4 @@
-package terminaloperation;
+package org.example.terminaloperation;
 
 import java.util.Optional;
 import java.util.stream.Stream;

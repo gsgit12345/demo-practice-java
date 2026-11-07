@@ -1,4 +1,4 @@
-package streamtut.groupby;
+package org.example.stream.groupby;
 
 import java.util.Arrays;
 import java.util.List;
@@ -28,7 +28,8 @@ public static void partionByObjectExample()
 	      List<Employee> list = Arrays.asList(employees);
 
 	      
-	    Map<Boolean,List<Employee> > empList= list.stream().collect(Collectors.partitioningBy((Employee emp)->emp.getDepartment().equalsIgnoreCase("It")));
+	    Map<Boolean,List<Employee> > empList= list.stream().collect(Collectors.partitioningBy((Employee emp)->
+				emp.getDepartment().equalsIgnoreCase("It")));
 	    
 	    System.out.println(empList);
 }

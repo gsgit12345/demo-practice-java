@@ -4,7 +4,7 @@ public class LambdaFunctional {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-maxfilter.CustomeFunctional func=() -> {
+CustomeFunctional func=() -> {
 	
 	System.out.println("hello in function");
 	

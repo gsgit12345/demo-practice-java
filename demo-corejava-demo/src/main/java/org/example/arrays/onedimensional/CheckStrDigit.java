@@ -11,6 +11,7 @@ public class CheckStrDigit {
 		//https://www.geeksforgeeks.org/how-to-check-if-string-contains-only-digits-in-java/
         String st = "12345d";
         System.out.println(checkDigit(st));
+
     }
 
     public static boolean checkDigit(String str) {

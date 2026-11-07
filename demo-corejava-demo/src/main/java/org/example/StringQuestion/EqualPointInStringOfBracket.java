@@ -32,13 +32,13 @@ public class EqualPointInStringOfBracket {
             System.out.println("Not Balanced1");
 
         //   another scenario
-                String str22 = ")))()";
+        String str22 = ")))()";
         String str232 = "))))";
 
-     String dd=   convertUnbalancedBracketSequenceIntoBalanced(str232);
+        String dd = convertUnbalancedBracketSequenceIntoBalanced(str232);
 
 
-     System.out.println("unbalanced to balanced:;"+dd);
+        System.out.println("unbalanced to balanced:;" + dd);
 
     }
 
@@ -105,9 +105,8 @@ public class EqualPointInStringOfBracket {
 
     public static String convertUnbalancedBracketSequenceIntoBalanced(String str) {
 
-      //  Time Complexity: O(N)
-       // Auxiliary Space: O(1)
-
+        //  Time Complexity: O(N)
+        // Auxiliary Space: O(1)
 
 
         // Convert an unbalanced bracket sequence to a balanced sequence

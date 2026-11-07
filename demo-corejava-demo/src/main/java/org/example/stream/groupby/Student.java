@@ -1,4 +1,4 @@
-package streamtut.groupby;
+package org.example.stream.groupby;
 
 public class Student {
 	  private String name;

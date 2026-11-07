@@ -1,7 +1,10 @@
 package org.example.algorithmn;
 
+import org.example.defaultmethod.Student;
+
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -75,6 +78,26 @@ public class CompareMapByValue {
         Comparator<student> comparator=(s1,s2)->s1.getName().compareTo(s2.getName());
         List<student> students=studentList.stream().sorted(comparator.reversed()).collect(Collectors.toList());
         System.out.println("studen list::;"+students.toString());
+        //compare by one property
+        List<student> dd=studentList.stream().sorted(Comparator.comparing(student::getName)).collect(Collectors.toList());
+        System.out.println("sort list::;"+dd.toString());
+        char z='Z';
+        char a='A';
+
+        System.out.println("z is ::"+(int)z+":a is:"+(int)a);
+
+        // compare by using the lower case
+        studentList.stream().sorted(Comparator.comparing(student->student.getName().toLowerCase())).
+                collect(Collectors.toList());
+        //compare by using the lower case and reverse the compararion
+
+        studentList.stream().map(student-> {
+                    student.setName(student.getName().toLowerCase());
+                            return student;
+                }
+        ).sorted((s,s1)->s1.getName().compareTo(s.getName())).collect(Collectors.toList());
+
+        System.out.println("lower case and sorting::"+studentList.toString());
 
     }
 

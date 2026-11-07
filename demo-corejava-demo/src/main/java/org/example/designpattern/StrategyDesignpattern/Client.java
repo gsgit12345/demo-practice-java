@@ -1,5 +1,4 @@
 package org.example.designpattern.StrategyDesignpattern;
-import executerdemo.Thread.NetworkChecker;
 
 public class Client {
 

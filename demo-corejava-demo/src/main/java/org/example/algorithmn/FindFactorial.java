@@ -1,10 +1,15 @@
 package org.example.algorithmn;
 
+import java.util.stream.IntStream;
+
 public class FindFactorial {
 public static void main(String str[])
 {
 	int num=4;
 	findFact(num);
+
+	long l=IntStream.rangeClosed(1,5).reduce(1,(a,b)->a*b);
+	System.out.println("lis:;"+l);
 }
 
 public static int findFact(int num)

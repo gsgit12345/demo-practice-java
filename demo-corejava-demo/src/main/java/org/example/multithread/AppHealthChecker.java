@@ -1,4 +1,6 @@
-package executerdemo.Thread;
+package org.example.multithread;
+
+import org.example.multithread.NetworkChecker;
 
 import java.util.concurrent.CountDownLatch;
 

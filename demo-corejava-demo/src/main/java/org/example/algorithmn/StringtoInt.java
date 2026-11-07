@@ -30,5 +30,7 @@ public class StringtoInt {
         if( isNegative )
         number = -number;
         return number;
-    }   
+    }
+
+
 }

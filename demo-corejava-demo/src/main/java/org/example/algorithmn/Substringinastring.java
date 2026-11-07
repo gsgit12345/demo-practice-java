@@ -5,9 +5,10 @@ import java.util.ArrayList;
 public class Substringinastring {
 public static void main(String str[])
 {
-	
+	String str1 = "abcabcabc";
+	System.out.println(repeatingSubstring(str1));
 }
-public String repeatingSubstring(String as)
+public static String repeatingSubstring(String as)
 {
 	ArrayList<String> aL=new ArrayList<String>();
 	String repeated = "";

@@ -1,4 +1,4 @@
-package comparator.withjdk8;
+package org.example.comparator.withjdk8;
 
 import org.example.comparator.withjdk7.Developer;
 

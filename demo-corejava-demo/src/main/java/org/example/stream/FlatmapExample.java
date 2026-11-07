@@ -34,7 +34,8 @@ public class FlatmapExample {
 		//System.out.println();
 		
 		// creats a stream of elemnts using flatMap()
-		List<String> flatMapList = allproducts.stream().flatMap(innerlist -> innerlist.stream()).collect(Collectors.toList());
+		List<String> flatMapList = allproducts.stream().flatMap(innerlist ->
+				innerlist.stream()).collect(Collectors.toList());
 		System.out.println("List After Applying Mapping and Flattening Operation: \n");
 		// prints the new stream that we get after applying mapping and flattening
 		System.out.println(flatMapList);

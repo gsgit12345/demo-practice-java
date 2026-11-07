@@ -20,7 +20,8 @@ public class TestMapFilter2 {
       Map<Integer,String>  sort= hosting.entrySet().stream().filter(Predicate.isEqual("linode.com"))
         .collect(Collectors.toMap(k->k.getKey(), e->e.getValue()));
       
-      Map<Integer,String>  sort2=  hosting.entrySet().stream().filter(map->map.getKey()==2).collect(Collectors.toMap(k->k.getKey(),e->e.getValue()));
+      Map<Integer,String>  sort2=  hosting.entrySet().stream().filter(map->map.getKey()==2).
+              collect(Collectors.toMap(k->k.getKey(),e->e.getValue()));
       
       
       Map<Integer,String>  sort3=  hosting.entrySet().stream().filter(map->map.getKey()==3).

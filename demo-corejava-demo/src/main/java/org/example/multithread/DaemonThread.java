@@ -1,4 +1,4 @@
-package executerdemo.Thread;
+package org.example.multithread;
 public class DaemonThread extends Thread 
 { 
    public void run() 

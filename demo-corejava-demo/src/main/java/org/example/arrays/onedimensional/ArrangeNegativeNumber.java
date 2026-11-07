@@ -8,14 +8,14 @@ public class ArrangeNegativeNumber {
         // TODO Auto-generated method stub
         int array[] = {-1, -4, 5, 7, 11, -23, 99, -34, 23, -90};
 
-      //  int arr2[] = shiftNegative(array);
-         int arr[] = arrangeNegativeNumberAtOneSide(array);
+        int arr2[] = arrangeNegativeNumberAtOneSide(array);
+       //  int arr[] = arrangeNegativeNumberAtOneSide(array);
 
-        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(arr2));
 
 
     }
-
+//[-1, -4, -23, -34, -90, 5, 99, 7, 23, 11]
     public static int[] shiftNegative(int array[]) {
         int len = array.length;
         int i = -1;
@@ -40,7 +40,7 @@ public class ArrangeNegativeNumber {
         int temp = 0;
 
         for (int i = 0; i < array.length; i++) {
-            if (array[i] < 0) {
+            if (array[i] > 0) {
                 if (j != i) {
                     temp = array[j];
                     array[j] = array[i];

@@ -13,7 +13,8 @@ public class getstringfromstream {
 		List<Student> list=getStudent();
 		
 		//String name=list.stream().map(x->x.getAddr().getProimary().endsWith("de")).collect();
-		List<String>  aa=list.stream().filter(x->x.getAddr().getProimary().startsWith("de")).map(xx->xx.getAddr().getProimary()).collect(Collectors.toList());
+		List<String>  aa=list.stream().filter(x->x.getAddr().getProimary().startsWith("de")).
+				map(xx->xx.getAddr().getProimary()).collect(Collectors.toList());
               System.out.println(aa.toString())  ;        
 		//System.out.println(name);
 

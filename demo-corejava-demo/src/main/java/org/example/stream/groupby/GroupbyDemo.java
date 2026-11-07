@@ -1,4 +1,4 @@
-package streamtut.groupby;
+package org.example.stream.groupby;
 
 import java.util.Arrays;
 import java.util.List;

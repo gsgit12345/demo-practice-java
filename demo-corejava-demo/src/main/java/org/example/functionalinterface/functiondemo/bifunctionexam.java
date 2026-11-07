@@ -24,7 +24,7 @@ public class bifunctionexam {
 		BiFunction<Integer, Integer, Integer> resultList2=(x,y)->x*y;
 		
 		resultList2=resultList2.andThen(x->x+1);
-	System.out.println(	resultList2.apply(2, 5));
+	System.out.println(""+	resultList2.apply(2, 5));
 		
 	}
 

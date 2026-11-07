@@ -1,4 +1,4 @@
-package executerdemo.Thread;
+package org.example.multithread;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;

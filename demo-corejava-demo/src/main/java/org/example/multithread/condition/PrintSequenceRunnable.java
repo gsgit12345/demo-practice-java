@@ -15,11 +15,9 @@ public class PrintSequenceRunnable implements Runnable{
 	@Override
 	public void run() {
 		try {
-	
-	
-		while (number < PRINT_NUMBERS_UPTO-1) {
+		while (number <= PRINT_NUMBERS_UPTO) {
 			synchronized (lock) {
-				while (number % 3 != remainder) { // wait for numbers other than remainder
+				while (number % 2 != remainder) { // wait for numbers other than remainder
 					try {
 						lock.wait();
 					} catch (InterruptedException e) {

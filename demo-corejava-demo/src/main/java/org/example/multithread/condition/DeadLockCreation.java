@@ -33,6 +33,11 @@ public class DeadLockCreation {
 		DeadLockCreation dead=new DeadLockCreation();
 		dead.t1.start();
 		dead.t2.start();
+		Thread.State st=dead.t1.getState();
+		Thread.State st2=dead.t2.getState();
+		System.out.println(st.toString());
+		System.out.println(st2.toString());
+
 	}
 }
 

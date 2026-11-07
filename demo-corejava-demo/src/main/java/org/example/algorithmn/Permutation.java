@@ -6,10 +6,11 @@ public class Permutation
 { 
 	public static void main(String[] args) 
 	{ 
-		String str = "ABChello"; 
+		String str = "ABChello";
+		String v="ABC";
 		int n = str.length(); 
 		Permutation permutation = new Permutation(); 
-		permutation.permute(str, 0, n-1); 
+		permutation.permute(v, 0, n-1);
 	} 
 
 	
@@ -19,7 +20,7 @@ public class Permutation
 			System.out.println(str); 
 		else
 		{ 
-			for (int i = l; i <= r; i++) 
+			for (int i = l; i <= r; i++)
 			{ 
 				str = swap(str,l,i); 
 				permute(str, l+1, r); 

@@ -1,7 +1,13 @@
 package org.example.algorithmn;
 
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
+import org.example.stream.groupby.Student;
 import pojo.Employee;
 
 public class FindDuplicateChar {
@@ -28,12 +34,37 @@ public class FindDuplicateChar {
 	
 HashMap<Employee,Integer>	 map=getDuplicateObject(array2);
 	System.out.println("after remove dupliacte is"+map);
+
+	List<Employee> employeeLis= Arrays.asList(emp1,em,e,e1,e2,e2,e2,e3);
+	HashMap<Employee,Integer> count=new HashMap<>();
+	int i=0;
+
+		List<Map.Entry<Employee,Long>> count2=Arrays.stream(array2).collect(Collectors.groupingBy
+						(Function.identity(),Collectors.counting())).
+				entrySet().stream().filter(entry->entry.getValue()>1l).collect(Collectors.toList());
+
+
+		HashMap<Employee,Long> count3=Arrays.stream(array2).collect(Collectors.groupingBy
+						(Function.identity(),Collectors.counting())).
+				entrySet().stream().filter(entry->entry.getValue()>1l).
+				collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,(o,n)->n,HashMap::new));
+
+		System.out.println("du:::::"+count2.toString());
+
+
+for(Map.Entry<Employee,Long> emp11:count2)
+{
+	System.out.println(emp11.getKey()+"::"+emp11.getValue());
+}
+
 	}
 	
 	
 	
 	public static HashMap<Employee,Integer> getDuplicateObject(Employee arr[])
 	{
+
+
 
 		HashMap<Employee,Integer> dup=new HashMap<Employee,Integer>();
 		

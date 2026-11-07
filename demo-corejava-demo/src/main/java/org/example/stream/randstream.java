@@ -1,4 +1,4 @@
-package streamtut;
+package org.example.stream;
 
 import java.util.Random;
 import java.util.stream.Stream;

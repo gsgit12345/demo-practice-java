@@ -6,7 +6,7 @@ public class strin8 {
 		// TODO Auto-generated method stub
 final String str="test";
 
-str.chars().forEach(ch->System.out.println(ch));
+str.chars().forEach(ch->System.out.println((char)ch));
 	}
 
 }

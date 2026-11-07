@@ -2,32 +2,37 @@ package org.example.comparator.withjdk8;
 
 import java.util.Arrays;
 import java.util.function.Function;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class charreverseinjava8 {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		
-		charreverseinjava8 rev=new charreverseinjava8();
-		//rev.reverse_character_in_words("Welcome to Techndeck.com");
-		
-		rev.reverse_words_in_String("Welcome to Techndeck.com");
-        
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
 
-		
-	}
+
+        charreverseinjava8 rev = new charreverseinjava8();
+        //rev.reverse_character_in_words("Welcome to Techndeck.com");
+
+        rev.reverse_words_in_String("Welcome to Techndeck.com");
+        String word = "Welcome to Techndeck.com";
+
+
+        Stream<String> streamOfWords = Arrays.stream(word.split(" "));
+
+
+    }
+
     public void reverse_character_in_words(String str) {
         String words[] = str.split(" ");
 
-        Stream <String> streamOfWords = Arrays.stream(words);
+        Stream<String> streamOfWords = Arrays.stream(words);
 
         streamOfWords.forEach(w -> {
 
             System.out.println("Original word: " + w);
 
-            Function <String,String> reverse = s -> new StringBuilder(s).reverse().toString();
+            Function<String, String> reverse = s -> new StringBuilder(s).reverse().toString();
 
             String reversedWord = reverse.apply(w);
 
@@ -36,16 +41,17 @@ public class charreverseinjava8 {
         });
 
     }
+
     public static void reverse_words_in_String(String str) {
         String words[] = str.split(" ");
 
         StringBuilder sb = new StringBuilder();
 
-        Stream <String> stream = Arrays.stream(words);
+        Stream<String> stream = Arrays.stream(words);
 
         stream.forEach(w -> {
 
-            Function <String,String> reverse = s -> new StringBuilder(s).reverse().toString();
+            Function<String, String> reverse = s -> new StringBuilder(s).reverse().toString();
 
             String reversedWord = reverse.apply(w);
 

@@ -11,9 +11,14 @@ public class ArrangeZeroOneSide {
         int arr1[] = {1, 1, 1, 0, 1, 0, 1, 0};
 
         // int arr2[] = arrangeZeroRightSide(arr);
-        int arr3[] = arrangeZeroLeftSide(arr);
+        int arr3[] = arrangeZeroRightSide(arr);
 
         System.out.println(Arrays.toString(arr3));
+
+     int aa[] =  arrangeZeroToTheStart(arr1);
+        System.out.println(Arrays.toString(aa));
+
+
 
     }
 
@@ -29,24 +34,6 @@ public class ArrangeZeroOneSide {
         }
         while (count < array.length)
             array[count++] = 0;
-
-
-        return array;
-    }
-
-    public static int[] arrangeZeroLeftSide(int array[]) {
-        int count = 0;
-
-        for (int i = 0; i < array.length; i++) {
-
-            if (array[i] == 0) {
-                array[i] = 0;
-                count++;
-            }
-        }
-        //not working
-        while (count < array.length)
-            array[count++] = array[count];
 
 
         return array;

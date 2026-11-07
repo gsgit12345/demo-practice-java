@@ -1,9 +1,7 @@
 package org.example.algorithmn;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
-import java.util.OptionalInt;
+import java.util.*;
+import java.util.stream.Stream;
 
 public class FindLargestSmallestNumber {
 
@@ -11,6 +9,25 @@ public class FindLargestSmallestNumber {
 
         //numbers array
         int numbers[] = new int[]{55, 32, 45, 98, 82, 11, 9, 39, 50};
+        List<Integer> numbers2 = Arrays.asList(-10, 3, -2, 8, 7);
+        int absMin = numbers2.stream()
+                .min(Comparator.comparingInt(Math::abs))
+                .orElseThrow(NoSuchElementException::new);
+
+
+        Arrays.stream(numbers).max();
+        List<Integer> list = Arrays.asList(-9, -18, 0, 25, 4);
+
+        Integer var = list.stream().max(Integer::compare).get();
+System.out.println("max is:;"+var);
+        List<String> list2 = Arrays.asList("G", "E", "E", "K",
+                "g", "e", "e", "k");
+
+        // using Stream.max() method with Comparator
+        // Here, the character with maximum ASCII value
+        // is stored in variable MAX
+        String MAX = list2.stream().max(Comparator.
+                comparing(String::valueOf)).get();
 
         // int result[] = findMinMaxInArray(numbers);
         int result[] = findMinMaxInArrayUsingJava8(numbers);

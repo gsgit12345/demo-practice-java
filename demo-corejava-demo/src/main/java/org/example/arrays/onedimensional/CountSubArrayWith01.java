@@ -42,7 +42,6 @@ public class CountSubArrayWith01 {
             if (array[i] == 0)
                 array[i] = -1;
             sum = sum + array[i];
-
             if (sum == 0)
                 count++;
             if (hashMap.containsKey(sum))

@@ -1,12 +1,14 @@
 package org.example.algorithmn;
 
+import java.util.Arrays;
+
 public class maxproduct {
 
 	public static void main(String str[])
 	{
 		int[] arr = { 52, 12, 34, 10, 6, 40, 0, 12, 40, 52, -56, -78, -99, 68 };
 		int max=findMaxProduct(arr);
-		
+
 		System.out.println("max is::"+max);
 	}
 	

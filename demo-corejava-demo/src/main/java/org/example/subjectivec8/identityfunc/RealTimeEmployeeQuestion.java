@@ -42,7 +42,8 @@ public static void getAverageAge()
   //  3. Find the average age of Male and Female Employees.
     List<RealTimeEmployee> employeeList=   loadEmployee();
 
-    Map averageAge=employeeList.stream().collect(Collectors.groupingBy(emp->emp.getGender(),Collectors.averagingInt(RealTimeEmployee::getAge)));
+    Map averageAge=employeeList.stream().collect(Collectors.groupingBy
+            (emp->emp.getGender(),Collectors.averagingInt(RealTimeEmployee::getAge)));
     System.out.println("average age of gender::"+averageAge.toString());
     //average age of gender::{Male=30.181818181818183, Female=27.166666666666668}
 
@@ -59,7 +60,8 @@ public static void joinAfterXXXX()
     {
        // 5. Count the number of employees in each department.
         List<RealTimeEmployee> employeeList=   loadEmployee();
-    Map numEmpinEachDept=    employeeList.stream().collect(Collectors.groupingBy(RealTimeEmployee::getDepartment,Collectors.counting()));
+    Map numEmpinEachDept=    employeeList.stream().collect(Collectors.groupingBy(RealTimeEmployee::
+            getDepartment,Collectors.counting()));
         System.out.println("number of employee in each department::"+numEmpinEachDept.toString());
         //number of employee in each department::{Product Development=5, Security And Transport=2, Sales And Marketing=3, Infrastructure=3, HR=2, Account And Finance=2}
     }
@@ -78,7 +80,8 @@ public static void findOldestOrMaxEmployee()
     {
         //8. Find out the average and total salary of the organization.
         List<RealTimeEmployee> employeeList=   loadEmployee();
-        DoubleSummaryStatistics empSalary=  employeeList.stream().collect(Collectors.summarizingDouble(RealTimeEmployee::getSalary));
+        DoubleSummaryStatistics empSalary=  employeeList.stream().collect(Collectors.
+                summarizingDouble(RealTimeEmployee::getSalary));
     System.out.println("max sal::"+empSalary.getMax()+"minsal::"+empSalary.getMin()+"totalsal::"+empSalary.getSum());
     //collect all name into List
       List<String>  allEmployee= employeeList.stream().map(RealTimeEmployee::getName).collect(Collectors.toList());
@@ -90,7 +93,8 @@ public static void findOldestOrMaxEmployee()
       double totalSalary=  employeeList.stream().collect(Collectors.summingDouble(RealTimeEmployee::getSalary));
         System.out.println("totalSalary:::"+totalSalary);
         //group employee by department
-       Map<String,List<RealTimeEmployee>> employeesByDepartment = employeeList.stream().collect(Collectors.groupingBy(RealTimeEmployee::getDepartment));
+       Map<String,List<RealTimeEmployee>> employeesByDepartment = employeeList.stream().
+               collect(Collectors.groupingBy(RealTimeEmployee::getDepartment));
         employeesByDepartment.forEach(
                 (department, employeesInDepartment) ->
                 {
@@ -106,13 +110,15 @@ public static void groupNameByGender()
 {
     List<RealTimeEmployee> employeeList=   loadEmployee();
    Map<String,List<String>> groupNameBYGender= employeeList.stream().collect
-           (Collectors.groupingBy(RealTimeEmployee::getGender,Collectors.mapping(RealTimeEmployee::getName,Collectors.toList())));
+           (Collectors.groupingBy(RealTimeEmployee::getGender,
+                   Collectors.mapping(RealTimeEmployee::getName,Collectors.toList())));
    //group name by gender::{Male=[Paul Niksui, Martin Theron, Murali Gowda, Iqbal Hussain, Manu Sharma, Wang Liu, Jaden Dough, Nitin Joshi, Nicolus Den, Ali Baig, Anuj Chettiar],
     // Female=[Jiya Brein, Nima Roy, Amelia Zoe, Jasna Kaur, Jyothi Reddy, Sanvi Pandey]}
     System.out.println("group name by gender::"+groupNameBYGender.toString());
     //9. List down the employees of each department.
         Map<String,List<String>> allEmployeeInEachdepartment=  employeeList.stream().
-                collect(Collectors.groupingBy(RealTimeEmployee::getDepartment,Collectors.mapping(RealTimeEmployee::getName,Collectors.toList())));
+                collect(Collectors.groupingBy(RealTimeEmployee::getDepartment,
+                        Collectors.mapping(RealTimeEmployee::getName,Collectors.toList())));
   //allEmployeeInEachdepartment::{Product Development=[Murali Gowda, Wang Liu, Nitin Joshi, Sanvi Pandey, Anuj Chettiar],
     //Security And Transport=[Iqbal Hussain, Jaden Dough], Sales And Marketing=[Paul Niksui, Amelia Zoe, Nicolus Den],
     //Infrastructure=[Martin Theron, Jasna Kaur, Ali Baig], HR=[Jiya Brein, Nima Roy], Account And Finance=[Manu Sharma, Jyothi Reddy]}
@@ -122,7 +128,8 @@ public static void findOutSeniorMostEmployeeInCompany()
 {
     //10. Find out the senior  experienced employees in the organization
     List<RealTimeEmployee> employeeList=   loadEmployee();
-    Optional<RealTimeEmployee> seniormostemployee=employeeList.stream().sorted(Comparator.comparingInt(RealTimeEmployee::getYearOfJoining)).findFirst();
+    Optional<RealTimeEmployee> seniormostemployee=employeeList.stream().sorted(Comparator.comparingInt
+            (RealTimeEmployee::getYearOfJoining)).findFirst();
     System.out.println("senior most emplyee in company=="+seniormostemployee.get().toString());
     //Query 3.3 : What is the average age of male and female employees?
     Map averagingAgeofMaleandFemale=employeeList.stream().collect(Collectors.groupingBy(RealTimeEmployee::getGender,
@@ -142,7 +149,8 @@ System.out.println(secondMinxxxSalaried.toString());
     System.out.println("highestPaidEmployeeWrapper::"+highestPaidEmployeeWrapper.toString());
     //Query 3.5 : Get the names of all employees who have joined after 2015?
    // List<String>  after2015employee=employeeList.stream().filter(emp->emp.getYearOfJoining()>2015).collect(Collectors.toList());
-    List<String>  after2015employee=employeeList.stream().filter(emp->emp.getYearOfJoining()>2015).map(emp->emp.getName()).collect(Collectors.toList());
+    List<String>  after2015employee=employeeList.stream().filter(emp->emp.getYearOfJoining()>2015).
+            map(emp->emp.getName()).collect(Collectors.toList());
     System.out.println("after2015employee::"+after2015employee.toString());
 
 }
@@ -150,22 +158,29 @@ System.out.println(secondMinxxxSalaried.toString());
     {
         //Query 3.8 : Get the details of youngest male employee in the product development department?
         List<RealTimeEmployee> employeeList=   loadEmployee();
-      Optional<RealTimeEmployee> youngestEmployee=  employeeList.stream().filter(emp->emp.getGender().equalsIgnoreCase("Male")
-                &&emp.getDepartment().equalsIgnoreCase("Product Development")).min(Comparator.comparingInt(RealTimeEmployee::getAge));
+      Optional<RealTimeEmployee> youngestEmployee=  employeeList.stream().filter(emp->emp.getGender().
+              equalsIgnoreCase("Male")
+                &&emp.getDepartment().equalsIgnoreCase("Product Development"))
+              .min(Comparator.comparingInt(RealTimeEmployee::getAge));
       System.out.println("youngest employee::"+youngestEmployee.get().toString());
       //youngest employee::Id : 222, Name : Nitin Joshi, age : 25, Gender : Male, Department : Product Development, Year Of Joining : 2016, Salary : 28200.0
       //  Query 3.8 : Get the details of oldest male employee in the product development department?
-        Optional<RealTimeEmployee> oldestEmployee=  employeeList.stream().filter(emp->emp.getGender().equalsIgnoreCase("Male")
-                &&emp.getDepartment().equalsIgnoreCase("Product Development")).max(Comparator.comparingInt(RealTimeEmployee::getAge));
+        Optional<RealTimeEmployee> oldestEmployee=  employeeList.stream().filter(emp->emp.getGender().
+                equalsIgnoreCase("Male")
+                &&emp.getDepartment().equalsIgnoreCase("Product Development")).
+                max(Comparator.comparingInt(RealTimeEmployee::getAge));
         System.out.println("oldestEmployee employee::"+oldestEmployee.get().toString());
         //Query 3.9 : Who has the most working experience in the organization?
-      Optional<RealTimeEmployee> mostexperience= employeeList.stream().sorted(Comparator.comparingInt(RealTimeEmployee::getYearOfJoining)).findFirst();
+      Optional<RealTimeEmployee> mostexperience= employeeList.stream().sorted(Comparator.comparingInt
+              (RealTimeEmployee::getYearOfJoining)).findFirst();
         System.out.println("mostexperience employee::"+mostexperience.get().toString());
         //second way Query 3.9 : Who has the second most working experience in the organization?
-        Optional<RealTimeEmployee> mostexperience2= employeeList.stream().sorted(Comparator.comparingInt(RealTimeEmployee::getYearOfJoining)).skip(1).findFirst();
+        Optional<RealTimeEmployee> mostexperience2= employeeList.stream().sorted(Comparator.
+                comparingInt(RealTimeEmployee::getYearOfJoining)).skip(1).findFirst();
         System.out.println("mostexperience2 employee::"+mostexperience2.get().toString());
         //Query 3.9 : Who has the min working experience in the organization?
-        Optional<RealTimeEmployee> minexperience2= employeeList.stream().sorted(Comparator.comparingInt(RealTimeEmployee::getYearOfJoining).reversed()).findFirst();
+        Optional<RealTimeEmployee> minexperience2= employeeList.stream().sorted(Comparator.
+                comparingInt(RealTimeEmployee::getYearOfJoining).reversed()).findFirst();
         System.out.println("minexperience2 employee::"+minexperience2.get().toString());
         //Query 3.10 : How many male and female employees are there in the sales and marketing team?
        Map genderwiseemployeeinparticulardept= employeeList.stream().filter(emp->emp.getDepartment()=="Sales And Marketing").
@@ -176,7 +191,8 @@ public static void findOutEmployeeGreaterThan25Years()
     {
         //Query 3.14 : Separate the employees who are younger or equal to 25 years from those employees who are older than 25 years.
         List<RealTimeEmployee> employeeList=   loadEmployee();
-        Map<Boolean, List<RealTimeEmployee>> employeGreaterthan25=   employeeList.stream().collect(Collectors.partitioningBy(emp -> emp.getAge() > 25));
+        Map<Boolean, List<RealTimeEmployee>> employeGreaterthan25=   employeeList.stream().collect(Collectors.
+                partitioningBy(emp -> emp.getAge() > 25));
         System.out.println("employeGreaterthan25 employee::"+employeGreaterthan25.toString());
         Stream<Integer>
                 stream = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);

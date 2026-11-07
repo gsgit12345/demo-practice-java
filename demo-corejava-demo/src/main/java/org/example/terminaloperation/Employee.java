@@ -1,4 +1,4 @@
-package terminaloperation;
+package org.example.terminaloperation;
 
 class Employee {
     private int id;

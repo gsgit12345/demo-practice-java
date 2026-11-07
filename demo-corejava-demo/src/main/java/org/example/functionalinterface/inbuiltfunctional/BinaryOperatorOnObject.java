@@ -38,6 +38,8 @@ public class BinaryOperatorOnObject {
         Developer developer2 = find(list, BinaryOperator.minBy(Comparator.comparing(Developer::getSalary)));
         System.out.println(developer2); // Developer{name='mkyong', salary=1}
 
+       Developer dd= list.stream().max(Comparator.comparing(Developer::getSalary)).get();
+       System.out.println("max:"+dd.getSalary());
     }
 
     public static Developer find(List<Developer> list, BinaryOperator<Developer> accumulator) {

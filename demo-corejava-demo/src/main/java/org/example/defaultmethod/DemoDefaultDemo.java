@@ -8,7 +8,7 @@ interface int1234
            }
            public static void sayState()
            {
-               System.out.println("hello say static methos");
+               System.out.println("hello say static methos interface");
            }
           /* public default int hashCode()
            {

@@ -67,7 +67,8 @@ public class StringJoinerExample {
     public static void joinObjectPropertyWithExtraString()
     {
         List<RealTimeEmployee> employeeList=   RealTimeEmployeeQuestion.loadEmployee();
-    String joine=    employeeList.stream().filter(p->p.getSalary()>34000).map(p->p.getName()).collect(Collectors.joining("are getting salary"));
+    String joine=    employeeList.stream().filter(p->p.getSalary()>34000).map(p->p.getName()).
+            collect(Collectors.joining("are getting salary"));
     System.out.println("joine:::"+joine);
 
     }
